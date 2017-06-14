@@ -1,0 +1,11 @@
+input.nav-closed {
+	outline-style:outset;
+	color:red;
+}
+input.nav-open {
+	outline-style:inset;
+	color:red;
+}
+.nav-folder {
+	margin-left: 10px;
+}

@@ -1,0 +1,46 @@
+1. Download Ubuntu Server 17.04
+
+2. Install it on VirtualBox VM without specifying any packages initially
+
+3. Run commands (following this guide https://www.digitalocean.com/community/tutorials/how-to-set-up-an-apache-mysql-and-python-lamp-server-without-frameworks-on-ubuntu-14-04):
+sudo apt update
+sudo apt upgrade
+sudo rm /usr/bin/python
+sudo ln -s /usr/bin/python3 /usr/bin/python
+sudo apt install python3-pip
+sudo apt install mysql-server
+mysql_secure_installation
+sudo apt install apache2
+sudo pip3 install pymysql
+
+3. Test the server
+cd /var/www
+sudo mkdir test
+sudo a2dismod mpm_event
+sudo a2enmod mpm_prefork cgi
+
+4. Add the following lines in file /etc/apache2/sites-enabled/000-default.conf inside <VirtualHost>:
+<Directory /var/www/test>
+    Options +ExecCGI
+    DirectoryIndex index.py
+</Directory>
+AddHandler cgi-script .py
+
+5. In that file modify "DocumentRoot" to be:
+DocumentRoot /var/www/test
+
+6. Power off the VM, go to it's settings, to the Network tab (followed this guide https://askubuntu.com/questions/52147/how-can-i-access-apache-on-virtualbox-guest-from-host)
+
+7. Select:
+Attached To: Bridged Adapter
+Name: Killer Wireless ...
+
+8. Save settings and restart VM
+
+9. Use the following command to get ip to the server. It's under "inet addr:"
+
+10. Install Flask
+
+11. Set up Flask (http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
+
+12. Include path in main.wsgi (pip3 for user installs into /home/<user>/.local/lib/python3.5/site-packages)

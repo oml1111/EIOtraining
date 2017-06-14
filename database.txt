@@ -1,0 +1,26 @@
+DATABASE eiotraining:
+	TABLE users:
+		user VARCHAR(20) INDEX(user)
+		password_hash TEXT
+		salt VARCHAR(20)
+		id BIGINT INDEX(id)
+		email TEXT
+		privilige TINYINT
+	TABLE variables:
+		name VARCHAR(20)
+		value BIGINT
+	TABLE news:
+		title VARCHAR(255)
+		content MEDIUMTEXT
+		id BIGINT INDEX(id)
+		created DATETIME INDEX(created)
+		creator_id BIGINT INDEX(creator_id)
+	TABLE navlinks:
+		parent BIGINT INDEX(parent) INDEX(parent)
+		id BIGINT INDEX(id) INDEX(id)
+		type TINYINT
+		description VARCHAR(255)
+	TABLE statements:
+		parent BIGINT INDEX(parent)
+		statement TEXT
+		type TINYINT

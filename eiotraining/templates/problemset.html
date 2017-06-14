@@ -1,0 +1,43 @@
+{% extends "frame.html" %}
+{% block body %}
+
+<script src="/static/psload.js"></script>
+
+
+{% for navevent in navevents %}
+	{% if navevent[0] == 0 %}
+		{% if navevent[1][2] == 0 %}
+			<input type="button" class="nav-closed" id="navbutton-{{navevent[1][1]}}" onclick="navtoggle('{{navevent[1][1]}}')" value="{{navevent[1][3]}}">
+			<a class="nav-delete" href="/problemset/delete/{{navevent[1][1]}}">delete</a>
+			<div class="nav-folder" id="navdiv-{{navevent[1][1]}}">
+		{% elif navevent[1][2] == 1 %}
+			<div><a class="nav-tutorial" href="/problemset/{{navevent[1][1]}}">{{navevent[1][3]}}</a>
+			{% if admin %}
+				<a class="nav-edit" href="/problemset/edit/{{navevent[1][1]}}">edit</a>
+				<a class="nav-delete" href="/problemset/delete/{{navevent[1][1]}}">delete</a>
+			{% endif %}
+			</div>
+		{% elif navevent[1][2] == 2 %}
+			<div><a class="nav-problem" href="/problemset/{{navevent[1][1]}}">{{navevent[1][3]}}</a>
+			{% if admin %}
+				<a class="nav-edit" href="/problemset/edit/{{navevent[1][1]}}">edit</a>
+				<a class="nav-delete" href="/problemset/delete/{{navevent[1][1]}}">delete</a>
+			{% endif %}
+			</div>
+		{% endif %}
+	{% elif navevent[0] == 1 %}
+		{% if navevent[1][2] == 0 %}
+			{% if admin %}
+				<div><a class="nav-add" href="/navadd/{{navevent[1][1]}}">Add folder/tutorial/problem</a></div>
+			{% endif %}
+			</div>
+		{% endif %}
+	{% endif %}
+{% endfor %}
+{% if admin %}
+	<div><a class="nav-add" href="/navadd/0">Add folder/tutorial/problem</a></div>
+{% endif %}
+
+{{ statement|safe }}
+
+{% endblock %}

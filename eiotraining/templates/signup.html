@@ -1,0 +1,45 @@
+{% extends "frame.html" %}
+{% block body %}
+<form method="post">
+	<table>
+		<tr>
+			<td>Username:</td>
+			<td><input name="user" value="{{user}}"></td>
+			{% if invalid_user %}
+				<td>
+				<span style="color:red;">Username must contain 3-20 characters and consist of latin letters, numbers, hyphens and/or underscores</span>
+				</td>
+			{% endif %}
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input name="password" type="password"></td>
+			{% if invalid_password %}
+				<td>
+				<span style="color:red;">Password must contain 6-50 characters</span>
+				</td>
+			{% endif %}
+		</tr>
+		<tr>
+			<td>Verify Password:</td>
+			<td><input name="verify" type="password"></td>
+			{% if invalid_verify %}
+				<td>
+				<span style="color:red;">Passwords don't match</span>
+				</td>
+			{% endif %}
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><input name="email" value="{{email}}"></td>
+			{% if invalid_email %}
+				<td>
+				<span style="color:red;"> Invalid email</span>
+				</td>
+			{% endif %}
+		</tr>
+	</table>
+	<span style="color:red;">{{error}}</span><br>
+	<input type="submit" value="Sign up">
+</form>
+{% endblock %}

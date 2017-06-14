@@ -1,0 +1,9 @@
+1. Run this command:
+sudo apt install openssh-server
+
+2. Connect with this:
+ssh user@192.168.1.x
+
+3. To allow ssh without password, run this on the host machine:
+ssh-keygen -t rsa		#Leave everything blank
+scp ~/.ssh/id_rsa.pub user@192.168.1.x:.ssh/authorized_keys

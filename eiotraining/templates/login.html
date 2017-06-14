@@ -1,0 +1,17 @@
+{% extends "frame.html" %}
+{% block body %}
+<form method="post">
+	<table>
+		<tr>
+			<td>Username:</td>
+			<td><input name="user" value="{{user}}"></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" name="password"></td>
+		</tr>
+	</table>
+	<span style="color:red;">{{error}}</span><br>
+	<input type="submit" value="Log in">
+</form>
+{% endblock %}
