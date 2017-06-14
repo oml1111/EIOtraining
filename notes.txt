@@ -1,0 +1,5 @@
+1. I opted to keep MySQL anonymous user. Should remove it later
+2. I disallowed remote root login in MySQL
+3. I opted to keep the 'test' MySQL database
+4. The "#!/usr/bin/python" line in scripts is IMPORTANT!
+5. I opted not to use virtualenv

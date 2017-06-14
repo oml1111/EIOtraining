@@ -11,7 +11,11 @@ app = Flask(__name__)
 
 
 
+#---------------------------------------------------------------------------
+#Auxilliary functions common across many request handlers
+
 def get_user():
+	"""Returns the username of the currently logged in user"""
 	user = request.cookies.get('user')
 	hash = request.cookies.get('password_hash')
 	if(user != None and user != '' and database.check_login(user, hash)):
@@ -20,6 +24,11 @@ def get_user():
 
 
 def render_page(file, **args):
+	"""Renders the given page.
+	Performs functionality every page needs,
+	checks whether an user is logged in and
+	if the user is an admin
+	"""
 	user = get_user()
 	admin = False
 	if user != None:
@@ -45,12 +54,18 @@ def is_admin_logged():
 		return False
 	return True
 
+
 @app.route('/')
 def index():
 	posts = database.get_posts(0, 10)
 	posts_and_users = [(post, database.get_user_data_by_id(post[4])[0]) for post in posts]
 	return render_page("index.html", posts_and_users = posts_and_users)
 	
+	
+#---------------------------------------------------------------------------
+#User account request handlers
+
+
 @app.route('/login', methods = ['GET', 'POST'])
 def login():
 	if request.method == 'GET':
@@ -113,6 +128,8 @@ def signup():
 		return resp
 
 
+
+
 @app.route('/newpost', methods = ['GET', 'POST'])
 def newpost():
 	if not is_admin_logged():
@@ -132,7 +149,13 @@ def newpost():
 
 
 
+
+#---------------------------------------------------------------------------
+#Problemset request handlers
+
+
 def navevent_dfs(parent, navevents):
+	"""Recursive function to create the problemset navigation tree structure"""
 	navlinks = database.get_navlinks(parent)
 	for navlink in navlinks:
 		navevents.append((0, navlink) )
@@ -181,6 +204,9 @@ def navadd(nav_id):
 
 @app.route('/problemset/delete/<int:nav_id>', methods = ['GET', 'POST'])
 def problemset_delete(nav_id):
+	"""The navlink deletion is recursive, all descendants get
+	deleted as well
+	"""
 	navlink = database.get_navlink(nav_id)
 	if navlink == None:
 		return redirect('/problemset')
