@@ -16,8 +16,8 @@ DATABASE eiotraining:
 		created DATETIME INDEX(created)
 		creator_id BIGINT INDEX(creator_id)
 	TABLE navlinks:
-		parent BIGINT INDEX(parent) INDEX(parent)
-		id BIGINT INDEX(id) INDEX(id)
+		parent BIGINT INDEX(parent)
+		id BIGINT INDEX(id)
 		type TINYINT
 		description VARCHAR(255)
 	TABLE statements:
