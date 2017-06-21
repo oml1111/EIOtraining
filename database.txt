@@ -24,3 +24,8 @@ DATABASE eiotraining:
 		parent BIGINT INDEX(parent)
 		statement TEXT
 		type TINYINT
+		
+		
+
+CREATE TABLE navlinks (parent BIGINT, INDEX(parent), id BIGINT, INDEX(id), type TINYINT, description VARCHAR(255));
+CREATE TABLE statements (parent BIGINT, INDEX(parent), statement TEXT, type TINYINT);

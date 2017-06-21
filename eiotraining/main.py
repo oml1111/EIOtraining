@@ -141,6 +141,8 @@ def newpost():
 		title = request.form['title']
 		content = request.form['content']
 		
+		user_data = database.get_user_data(get_user() )
+		
 		if(title == '' or content == ''):
 			return render_page("newpost.html", error="Need both title and content", title = title, content = content)
 		
