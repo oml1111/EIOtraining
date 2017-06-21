@@ -1,6 +1,8 @@
-{% extends "frame.html" %}
+{% set site = "/problemset" %}
+
+{% extends "et/frame.html" %}
 {% block title %}
-Problemset - EIOtraining
+Ülesannetekogu - EIOtraining
 {% endblock %}
 
 {% block body %}
@@ -19,14 +21,14 @@ Problemset - EIOtraining
 			</div>
 			<div class="nav-folder" id="navdiv-{{navevent[1][1]}}">
 		{% elif navevent[1][2] == 1 %}
-			<div><a class="nav-tutorial" href="/problemset/{{navevent[1][1]}}">{{navevent[1][3]}}</a>
+			<div><a class="nav-tutorial" href="/et/problemset/{{navevent[1][1]}}">{{navevent[1][3]}}</a>
 			{% if admin %}
 				<a class="nav-edit" href="/problemset/edit/{{navevent[1][1]}}">edit</a>
 				<a class="nav-delete" href="/problemset/delete/{{navevent[1][1]}}">delete</a>
 			{% endif %}
 			</div>
 		{% elif navevent[1][2] == 2 %}
-			<div><a class="nav-problem" href="/problemset/{{navevent[1][1]}}">{{navevent[1][3]}}</a>
+			<div><a class="nav-problem" href="/et/problemset/{{navevent[1][1]}}">{{navevent[1][3]}}</a>
 			{% if admin %}
 				<a class="nav-edit" href="/problemset/edit/{{navevent[1][1]}}">edit</a>
 				<a class="nav-delete" href="/problemset/delete/{{navevent[1][1]}}">delete</a>

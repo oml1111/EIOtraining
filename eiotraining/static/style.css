@@ -12,3 +12,7 @@ input.nav-open {
 .errormsg {
 	color:red;
 }
+.inlinetitle {
+	font-size: 1.75em;
+	font-weight: bold;
+}

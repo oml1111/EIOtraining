@@ -130,7 +130,7 @@ def get_posts(off, cnt):
 	posts = mc.get('posts')
 	if(posts == None):
 		cursor = db.cursor()
-		cursor.execute('SELECT * FROM news ORDER BY created DESC')
+		cursor.execute('SELECT * FROM news INNER JOIN users ON news.creator_id = users.id ORDER BY created DESC')
 		posts = cursor.fetchall()
 		mc.set('posts', posts)
 	return posts[off:off+cnt]

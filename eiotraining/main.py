@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 import cgitb
 cgitb.enable()
 
@@ -23,7 +24,7 @@ def get_user():
 	return None
 
 
-def render_page(file, **args):
+def render_page(file, lang = "en/", **args):
 	"""Renders the given page.
 	Performs functionality every page needs,
 	checks whether an user is logged in and
@@ -38,7 +39,7 @@ def render_page(file, **args):
 			args['admin'] = True
 			admin = True
 		
-	resp = make_response(render_template(file, **args) )
+	resp = make_response(render_template(lang+file, **args) )
 	if user == None:
 		resp.set_cookie('user', '', expires = 0)
 		resp.set_cookie('password_hash', '', expires = 0)
@@ -56,10 +57,14 @@ def is_admin_logged():
 
 
 @app.route('/')
-def index():
+def index(lang = "en/"):
 	posts = database.get_posts(0, 10)
-	posts_and_users = [(post, database.get_user_data_by_id(post[4])[0]) for post in posts]
-	return render_page("index.html", posts_and_users = posts_and_users)
+	posts_and_users = [(post[0:5], post[5]) for post in posts]
+	return render_page("index.html", lang, posts_and_users = posts_and_users)
+
+@app.route('/et/')
+def et_index():
+	return index("et/")
 	
 	
 #---------------------------------------------------------------------------
@@ -67,33 +72,42 @@ def index():
 
 
 @app.route('/login', methods = ['GET', 'POST'])
-def login():
+def login(lang = "en/"):
 	if request.method == 'GET':
-		return render_page("login.html")
+		return render_page("login.html", lang)
 	else:
 		user = request.form['user']
 		password = request.form['password']
 		hash = database.login(user, password)
 		if hash == None:
-			return render_page("login.html", user=user, error = "Incorrect login information!")
+			lang_errors = {	"en/" : u"Incorrect login information!",
+							"et/" : u"Sisselogimine ebaõnnestus!"}
+			return render_page("login.html", lang, user=user, error = lang_errors[lang])
 			
-		resp = make_response(redirect('/'))
+		resp = make_response(redirect('/' if lang == "en/" else "/et/"))
 		resp.set_cookie('user', user)
 		resp.set_cookie('password_hash', hash)
 		return resp
 
+@app.route('/et/login', methods = ['GET', 'POST'])
+def et_login():
+	return login("et/")
 
 @app.route('/logout')
-def logout():
-	resp = make_response(redirect('/'))
+def logout(lang=''):
+	resp = make_response(redirect(lang+'/'))
 	resp.set_cookie('user', '', expires = 0)
 	resp.set_cookie('password_hash', '', expires=0)
 	return resp
+	
+@app.route('/et/logout')
+def et_logout():
+	return logout('/et')
 
 @app.route('/signup', methods = ['GET', 'POST'])
-def signup():
+def signup(lang='en/'):
 	if request.method == 'GET':
-		return render_page("signup.html")
+		return render_page("signup.html", lang)
 	else:
 		user = request.form['user']
 		password = request.form['password']
@@ -116,18 +130,22 @@ def signup():
 			invalid_email = True
 		
 		if invalid_user or invalid_password or invalid_verify or invalid_email:
-			return render_page("signup.html", user = user, email = email, invalid_user = invalid_user, invalid_password = invalid_password, invalid_verify = invalid_verify, invalid_email = invalid_email)
+			return render_page("signup.html", lang, user = user, email = email, invalid_user = invalid_user, invalid_password = invalid_password, invalid_verify = invalid_verify, invalid_email = invalid_email)
 		
 		hash = database.signup(user, password, email)
 		if(hash == None):
-			return render_page("signup.html", user = user, email = email, error = "User already exists")
+			lang_errors = {	"en/" : u"User already exists",
+							"et/" : u"Kasutajanimi on juba võetud"}
+			return render_page("signup.html", lang, user = user, email = email, error = lang_errors[lang])
 			
-		resp = make_response(redirect('/'))
+		resp = make_response(redirect('/' if lang == "en/" else "/et/"))
 		resp.set_cookie('user', user)
 		resp.set_cookie('password_hash', hash)
 		return resp
 
-
+@app.route('/et/signup', methods = ['GET', 'POST'])
+def et_signup():
+	return signup('et/')
 
 
 @app.route('/newpost', methods = ['GET', 'POST'])
@@ -169,7 +187,7 @@ def navevent_dfs(parent, navevents):
 
 
 @app.route('/problemset/<int:page_id>')
-def problemset(page_id):
+def problemset(page_id, lang="en/"):
 	navevents = []
 	navevent_dfs(0, navevents)
 	
@@ -180,12 +198,22 @@ def problemset(page_id):
 	if statement:
 		statement_text = statement[1]
 	
-	return render_page("problemset.html", navevents = navevents, statement=statement_text)
+	return render_page("problemset.html", lang, navevents = navevents, statement=statement_text)
+	
+
+@app.route('/et/problemset/<int:page_id>')
+def et_problemset(page_id):
+	return problemset(page_id, "et/")
 
 
 @app.route('/problemset')
 def problemset_index():
 	return problemset(0)
+	
+	
+@app.route('/et/problemset')
+def et_problemset_index():
+	return problemset(0, "et/")
 	
 	
 @app.route('/navadd/<int:nav_id>', methods = ['GET', 'POST'])

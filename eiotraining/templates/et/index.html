@@ -1,0 +1,14 @@
+{% set site = "/" %}
+{% extends "et/frame.html" %}
+
+{% block title %}
+EIOtraining
+{% endblock %}
+
+{% block body %}
+{% for post in posts_and_users %}
+<h3>{{post[0][0]}}</h3> {{post[1]}} {{post[0][3]}} <br>
+{{post[0][1]|safe}}
+<hr>
+{% endfor %}
+{% endblock %}

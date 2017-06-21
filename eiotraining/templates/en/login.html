@@ -1,0 +1,23 @@
+{% set site = "/login" %}
+
+{% extends "en/frame.html" %}
+{% block title %}
+Login - EIOtraining
+{% endblock %}
+
+{% block body %}
+<form method="post">
+	<table>
+		<tr>
+			<td>Username:</td>
+			<td><input name="user" value="{{user}}"></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" name="password"></td>
+		</tr>
+	</table>
+	<span class="errormsg">{{error}}</span><br>
+	<input type="submit" value="Log in">
+</form>
+{% endblock %}

@@ -3,6 +3,8 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link rel="alternate" href="{{site}}" hreflang="en">
+	<link rel="alternate" href="/et{{site}}" hreflang="et">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/static/utils.js"></script>
 	<title>
@@ -13,12 +15,14 @@
 <body>
 
 	<header>
-	<span style="font-size: 1.75em; font-weight: bold;">EIOtraining</span>
+	<span class="inlinetitle">EIOtraining</span>
 	{% if login %}
 		<span style="float: right;"> {{login}}(<a href="/logout">logout</a>) </span>
 	{% else %}
 		<span style="float: right;"><a href="/login">login</a> | <a href="/signup">signup</a> </span>
 	{% endif %}
+	<br>
+	<a href="{{site}}">en</a> | <a href="/et{{site}}">et</a>
 	</header>
 
 	<nav>

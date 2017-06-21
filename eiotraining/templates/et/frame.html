@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xml:lang="et" lang="et">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link rel="alternate" href="{{site}}" hreflang="en">
+	<link rel="alternate" href="/et{{site}}" hreflang="et">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/static/utils.js"></script>
+	<title>
+	{% block title %} {% endblock %}
+	</title>
+</head>
+
+<body>
+
+	<header>
+	<span class="inlinetitle">EIOtraining</span>
+	{% if login %}
+		<span style="float: right;"> {{login}}(<a href="/et/logout">logi välja</a>) </span>
+	{% else %}
+		<span style="float: right;"><a href="/et/login">logi sisse</a> | <a href="/et/signup">loo kasutaja</a> </span>
+	{% endif %}
+	<br>
+	<a href="{{site}}">en</a> | <a href="/et{{site}}">et</a>
+	</header>
+
+	<nav>
+	<a href="/et/">Pealeht</a> <a href="/et/problemset">Ülesannetekogu</a>
+	</nav>
+
+	{% block body %} {% endblock %}
+</body>
+
+</html>

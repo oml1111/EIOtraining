@@ -1,35 +1,37 @@
-{% extends "frame.html" %}
+{% set site = "/signup" %}
+
+{% extends "et/frame.html" %}
 {% block title %}
-Signup - EIOtraining
+Konto Loomine - EIOtraining
 {% endblock %}
 
 {% block body %}
 <form method="post">
 	<table>
 		<tr>
-			<td>Username:</td>
+			<td>Kasutajanimi:</td>
 			<td><input name="user" value="{{user}}"></td>
 			{% if invalid_user %}
 				<td>
-				<span class="errormsg">Username must contain 3-20 characters and consist of latin letters, numbers, hyphens and/or underscores</span>
+				<span class="errormsg">Salasõnad peavad sisaldama 3-20 kirjamärki ja koosnema ladina tähtedest, numbritest, side- ja/või alakriipsudest</span>
 				</td>
 			{% endif %}
 		</tr>
 		<tr>
-			<td>Password:</td>
+			<td>Salasõna:</td>
 			<td><input name="password" type="password"></td>
 			{% if invalid_password %}
 				<td>
-				<span class="errormsg">Password must contain 6-50 characters</span>
+				<span class="errormsg">Salasõnad peavad sisaldama 6-50 tähemärki</span>
 				</td>
 			{% endif %}
 		</tr>
 		<tr>
-			<td>Verify Password:</td>
+			<td>Salasõna uuesti:</td>
 			<td><input name="verify" type="password"></td>
 			{% if invalid_verify %}
 				<td>
-				<span class="errormsg">Passwords don't match</span>
+				<span class="errormsg">Salasõnad ei ühildu</span>
 				</td>
 			{% endif %}
 		</tr>
@@ -38,7 +40,7 @@ Signup - EIOtraining
 			<td><input name="email" value="{{email}}"></td>
 			{% if invalid_email %}
 				<td>
-				<span class="errormsg"> Invalid email</span>
+				<span class="errormsg">Ebasobiv email-i aadress</span>
 				</td>
 			{% endif %}
 		</tr>

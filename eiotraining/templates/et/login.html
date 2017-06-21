@@ -1,17 +1,19 @@
-{% extends "frame.html" %}
+{% set site = "/login" %}
+
+{% extends "et/frame.html" %}
 {% block title %}
-Login - EIOtraining
+Sisse Logimine - EIOtraining
 {% endblock %}
 
 {% block body %}
 <form method="post">
 	<table>
 		<tr>
-			<td>Username:</td>
+			<td>Kasutajanimi:</td>
 			<td><input name="user" value="{{user}}"></td>
 		</tr>
 		<tr>
-			<td>Password:</td>
+			<td>Parool:</td>
 			<td><input type="password" name="password"></td>
 		</tr>
 	</table>
