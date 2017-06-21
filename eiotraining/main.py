@@ -174,7 +174,7 @@ def problemset(page_id):
 	navevent_dfs(0, navevents)
 	
 	statement = database.get_statement(page_id)
-	statement_text = "<div style='color:red;'>Statement doesn't exist. Need to fix this!</div>"
+	statement_text = "<div class='errormsg'>Statement doesn't exist. Need to fix this!</div>"
 	if page_id == 0:
 		statement_text = "<h3>Welcome to the problem set</h3>"
 	if statement:
