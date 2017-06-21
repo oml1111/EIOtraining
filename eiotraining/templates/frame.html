@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="/static/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/static/utils.js"></script>
 
 <head>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/static/utils.js"></script>
 	<title>
 	{% block title %} {% endblock %}
 	</title>
 </head>
 
-
-<header>
-<span style="font-size: 1.75em; font-weight: bold;">EIOtraining</span>
-{% if login %}
-	<span style="float: right;"> {{login}}(<a href="/logout">logout</a>) </span>
-{% else %}
-	<span style="float: right;"><a href="/login">login</a> | <a href="/signup">signup</a> </span>
-{% endif %}
-</header>
-
-<nav>
-<a href="/">Home</a> <a href="/problemset">Problem Set</a>
-</nav>
-
 <body>
-{% block body %} {% endblock %}
+
+	<header>
+	<span style="font-size: 1.75em; font-weight: bold;">EIOtraining</span>
+	{% if login %}
+		<span style="float: right;"> {{login}}(<a href="/logout">logout</a>) </span>
+	{% else %}
+		<span style="float: right;"><a href="/login">login</a> | <a href="/signup">signup</a> </span>
+	{% endif %}
+	</header>
+
+	<nav>
+	<a href="/">Home</a> <a href="/problemset">Problem Set</a>
+	</nav>
+
+	{% block body %} {% endblock %}
 </body>
 
 </html>
