@@ -5,6 +5,13 @@
 Login - EIOtraining
 {% endblock %}
 
+
+{% block head %}
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com">
+{% endblock %}
+
+
 {% block body %}
 <form method="post">
 	<table>
@@ -19,5 +26,8 @@ Login - EIOtraining
 	</table>
 	<span class="errormsg">{{error}}</span><br>
 	<input type="submit" value="Log in">
+	
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
 </form>
 {% endblock %}
