@@ -1,4 +1,8 @@
 {% extends "frame.html" %}
+{% block title %}
+Problemset - EIOtraining
+{% endblock %}
+
 {% block body %}
 
 <form method="post">
@@ -7,7 +11,7 @@
 	{% if statement[2] == 2 %}
 		<div>Files: <input type="file" name="files"></div>
 	{% endif %}
-	<div style="color:red;">{{error}}</div>
+	<div class="errormsg">{{error}}</div>
 	<input type="submit" value="submit">
 </form>
 

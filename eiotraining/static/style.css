@@ -9,3 +9,6 @@ input.nav-open {
 .nav-folder {
 	margin-left: 10px;
 }
+.errormsg {
+	color:red;
+}
