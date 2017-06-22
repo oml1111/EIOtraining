@@ -14,9 +14,8 @@ function onSignIn(googleUser) {
   
   xhr.onload = function() {
 	alert("Backend authentication done:" + "xhr.responseText");
+    window.location = "/problemset";
   };
   xhr.send('idtoken=' + id_token);
 
-
-  window.location = "/problemset";
 }
