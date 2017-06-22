@@ -11,7 +11,7 @@ function getNews() {
 	
 	xhr.onload = function() {
 		response = xhr.responseText;
-		$("#news").innerHTML = response;
+		$("#newsfeed").html(response);
 	}
 	xhr.send('user=' + user);
 }

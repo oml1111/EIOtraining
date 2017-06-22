@@ -12,7 +12,7 @@ EIOtraining
 	<input type="button" value="search" onclick="getNews();">
 </div>
 
-<div id="news">
+<div id="newsfeed">
 	{% for post in posts_and_users %}
 	<h3>{{post[0][0]}}</h3> {{post[1]}} {{post[0][3]}} <br>
 	{{post[0][1]|safe}}
