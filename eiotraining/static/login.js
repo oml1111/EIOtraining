@@ -24,6 +24,9 @@ function onSignIn(googleUser) {
 	alert("Backend authentication done:" + response);
 	if(response == "Success")
 	  window.location = "/problemset";
+	else {
+	  signOut();
+	}
   };
   xhr.send('idtoken=' + id_token);
 
