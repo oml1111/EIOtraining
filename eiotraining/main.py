@@ -311,7 +311,7 @@ def googlelogin():
 def getnews():
 	user = request.form['user']
 	
-	if(user == '')
+	if(user == ''):
 		return render_template('news.html', posts=database.get_posts(0, 10))
 	return render_template('news.html', posts=database.get_posts_by_creator(0, 10, user))
 	
