@@ -275,3 +275,22 @@ def problemset_edit(parent):
 		statement_text = request.form['statement']
 		database.edit_statement(parent, statement_text )
 		return redirect('/problemset')
+	
+
+#---------------------------------------------------------------------------
+#Google authentication backend
+
+from oauth2client import client, crypt
+
+@app.route('/googlelogin', methods = ['POST'])
+def googlelogin():
+	token = request.form['idtoken']
+	try:
+		idinfo = client.verify_id_token(token, "662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com")
+		if idinfo['iss'] not in ['accounts.google.com', 'https://accounts.google.com']:
+			return "Failure"
+		return "Success"
+	except crypt.AppIdentityError:
+		a=1
+	return "Failure"
+
