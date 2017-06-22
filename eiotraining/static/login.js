@@ -8,7 +8,8 @@ function signOut() {
 	});
 }
 
-function signOutSetUp() {
+window.onLoadCallback = function(){
+	gapi.auth2.init({client_id: '662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com'});
 	logoutlink = $("#logoutlink")
 	logoutlink.attr("href", "#")
 	logoutlink.attr("onclick", "signOut();")
