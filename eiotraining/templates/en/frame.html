@@ -11,7 +11,9 @@
 	{% block title %} {% endblock %}
 	</title>
 	
-	{% block head %} {%endblock %}
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com">
+	<script src="static/login.js"></script>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
 	<header>
 	<span class="inlinetitle">EIOtraining</span>
 	{% if login %}
-		<span style="float: right;"> {{login}}(<a href="/logout">logout</a>) </span>
+		<span style="float: right;"> {{login}}(<a href="/logout" onclick="signOut();">logout</a>) </span>
 	{% else %}
 		<span style="float: right;"><a href="/login">login</a> | <a href="/signup">signup</a> </span>
 	{% endif %}
