@@ -303,3 +303,15 @@ def googlelogin():
 		pass
 	return "Failure"
 
+
+#---------------------------------------------------------------------------
+#AJAX based system for requesting news by user
+
+@app.route('/getnews', methods = ['POST'])
+def getnews():
+	user = request.form['user']
+	
+	if(user == '')
+		return render_template('news.html', posts=database.get_posts(0, 10))
+	return render_template('news.html', posts=database.get_posts_by_creator(0, 10, user))
+	

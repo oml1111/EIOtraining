@@ -147,6 +147,16 @@ def get_posts(off, cnt):
 		posts = cursor.fetchall()
 		mc.set('posts', posts)
 	return posts[off:off+cnt]
+	
+	
+def get_posts_by_creator(off, cnt, user):
+	"""Return cnt posts starting from offset off where creator is user"""
+	posts = None
+	if(posts == None):
+		cursor = db.cursor()
+		cursor.execute('SELECT * FROM news INNER JOIN users ON news.creator_id = users.id WHERE user = %s ORDER BY created DESC', user)
+		posts = cursor.fetchall()
+	return posts[off:off+cnt]
 
 
 def get_navlinks(parent):
