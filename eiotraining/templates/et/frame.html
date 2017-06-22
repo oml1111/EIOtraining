@@ -10,6 +10,10 @@
 	<title>
 	{% block title %} {% endblock %}
 	</title>
+	
+	<script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+	<meta name="google-signin-client_id" content="662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com">
+	<script src="static/login.js"></script>
 </head>
 
 <body>
@@ -17,7 +21,7 @@
 	<header>
 	<span class="inlinetitle">EIOtraining</span>
 	{% if login %}
-		<span style="float: right;"> {{login}}(<a href="/et/logout">logi välja</a>) </span>
+		<span style="float: right;"> {{login}}(<a href="/et/logout" id="logoutlink">logi välja</a>) </span>
 	{% else %}
 		<span style="float: right;"><a href="/et/login">logi sisse</a> | <a href="/et/signup">loo kasutaja</a> </span>
 	{% endif %}

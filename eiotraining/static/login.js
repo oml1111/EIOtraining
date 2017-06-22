@@ -18,7 +18,6 @@ window.onLoadCallback = function(){
 }
 
 function onSignIn(googleUser) {
-  alert("Logged to Google!");
   var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
   console.log('Name: ' + profile.getName());
@@ -34,8 +33,12 @@ function onSignIn(googleUser) {
   xhr.onload = function() {
 	response = xhr.responseText;
 	alert("Backend authentication done:" + response);
-	if(response == "Success")
-	  window.location = "/problemset";
+	if(response == "Success") {
+		if(window.location.pathname.substr(0,3) == "/et")
+			window.location = "/et/"
+		else
+			window.location = "/";
+	}
 	else {
 	  signOut();
 	}
