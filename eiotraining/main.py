@@ -288,9 +288,18 @@ def googlelogin():
 	try:
 		idinfo = client.verify_id_token(token, "662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com")
 		if idinfo['iss'] not in ['accounts.google.com', 'https://accounts.google.com']:
-			return "Failure"
-		return str(idinfo)
+			return "Authentication Failure"
+			
+		email = idinfo['email']
+		user_data = database.get_user_data_by_email(email)
+		if(user_data == None):
+			return "User with this e-mail not found!"
+		
+		resp = make_response("Success")
+		resp.set_cookie('user', user_data[0])
+		resp.set_cookie('password_hash', user_data[1])
+		return resp
 	except crypt.AppIdentityError:
-		a=1
+		pass
 	return "Failure"
 
