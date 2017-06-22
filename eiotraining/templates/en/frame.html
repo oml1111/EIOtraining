@@ -16,12 +16,12 @@
 	<script src="static/login.js"></script>
 </head>
 
-<body>
+<body onload="signOutSetUp();">
 
 	<header>
 	<span class="inlinetitle">EIOtraining</span>
 	{% if login %}
-		<span style="float: right;"> {{login}}(<a href="/logout" onclick="signOut();">logout</a>) </span>
+		<span style="float: right;"> {{login}}(<a href="/logout" id="logoutlink">logout</a>) </span>
 	{% else %}
 		<span style="float: right;"><a href="/login">login</a> | <a href="/signup">signup</a> </span>
 	{% endif %}

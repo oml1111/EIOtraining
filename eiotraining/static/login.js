@@ -1,8 +1,17 @@
 function signOut() {
+	document.cookie = "user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+	document.cookie = "password_hash=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 	var auth2 = gapi.auth2.getAuthInstance();
 	auth2.signOut().then(function () {
 		alert('User signed out.');
+		location.reload();
 	});
+}
+
+function signOutSetUp() {
+	logoutlink = $("#logoutlink")
+	logoutlink.attr("href", "#")
+	logoutlink.attr("onclick", "signOut();")
 }
 
 function onSignIn(googleUser) {
