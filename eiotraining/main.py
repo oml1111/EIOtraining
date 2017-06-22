@@ -289,7 +289,7 @@ def googlelogin():
 		idinfo = client.verify_id_token(token, "662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com")
 		if idinfo['iss'] not in ['accounts.google.com', 'https://accounts.google.com']:
 			return "Failure"
-		return "Success"
+		return str(idinfo)
 	except crypt.AppIdentityError:
 		a=1
 	return "Failure"

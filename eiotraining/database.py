@@ -88,6 +88,19 @@ def get_user_data_by_id(id):
 	return data
 
 
+def get_user_data_by_email(email):
+	"""Pulls the user data from database based on email"""
+	data = mc.get('user_by_email:' + email)
+	if(data == None):
+		cursor = db.cursor()
+		cnt = cursor.execute('SELECT * FROM users WHERE email = %s', email)
+		if cnt == 0:
+			return None
+		data = cursor.fetchone()
+		mc.set('user_by_email:' + email, data)
+	return data
+
+
 def check_login(user, password_hash):
 	"""Checks if the cookie login information is correct"""
 	data = get_user_data(user)

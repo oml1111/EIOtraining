@@ -13,8 +13,10 @@ function onSignIn(googleUser) {
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   
   xhr.onload = function() {
-	alert("Backend authentication done:" + xhr.responseText);
-    window.location = "/problemset";
+	response = xhr.responseText;
+	alert("Backend authentication done:" + response);
+	if(response == "Success")
+	  window.location = "/problemset";
   };
   xhr.send('idtoken=' + id_token);
 

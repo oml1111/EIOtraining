@@ -41,6 +41,6 @@ Name: Killer Wireless ...
 
 10. Install Flask
 
-11. Set up Flask (http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
+11. Set up Flask (http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/), need to install mod-wsgi-py3
 
 12. Include path in main.wsgi (pip3 for user installs into /home/<user>/.local/lib/python3.5/site-packages)
