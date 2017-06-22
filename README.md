@@ -26,3 +26,6 @@ Techniques:
 6. Templating System (substitute for XML, 3p) - Handled in main.py. To allow us to place stuff to web pages in a cleaner fashion, we use the jinja2 templating system
 7. Testing environment (6p)
 8. Support for multiple languages (3p) - Handled in main.py and in templates. Pages that ordinary users can access are in both Estonian and English
+9. Authentication (3p) - Handled mainly in main.py and login.js. You can now log in with your Google account.
+10. AJAX (3p) - Handled in utils.js, news.html and main.py. In the index page, you can search news by creator username. Leave blank to fetch all news. You can create news on the '/newpost' page.
+11. Automated Tests - Created using Selenium IDE. Contained in the 'tests/' folder

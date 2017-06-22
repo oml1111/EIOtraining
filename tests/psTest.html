@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://oml1111.site/" />
+<title>Problemset Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Problemset Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=user</td>
+	<td>oliver</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>Horse123bAttery456stApler789</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Problem Set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>Welcome to the problem set</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(text(),'Add folder/tutorial/problem')])[3]</td>
+	<td>Add folder/tutorial/problem</td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=#navdiv-2000 &gt; div &gt; a.nav-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=navbutton-2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>css=#navdiv-2000 &gt; div &gt; a.nav-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=navbutton-4004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=navbutton-4004</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=navbutton-2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>css=#navdiv-2000 &gt; div &gt; a.nav-delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=logoutlink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>User signed out.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
