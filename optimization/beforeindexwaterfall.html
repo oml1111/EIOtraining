@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html><head>
+        <title>WebPagetest Test Details - California USA -...le : oml1111.site/ - 06/23/17 12:10:50</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Performance Test,Details,Webpagetest,Website Speed Test,Page Speed">
+<meta name="description" content="Website performance test details - California USA -...le : oml1111.site/ - 06/23/17 12:10:50">
+<meta name="author" content="Patrick Meenan">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+
+<link rel="shortcut icon" href="https://www.webpagetest.org/images/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="https://www.webpagetest.org/images/favicon.png" type="image/png">
+
+<iframe src="javascript:false" style="width: 0px; height: 0px; border: 0px none;"></iframe><script async="" src="beforeindexwaterfall_files/a"></script><script type="text/javascript" src="beforeindexwaterfall_files/5b0327a758"></script><script src="beforeindexwaterfall_files/nr-1039.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UA4FV1BACgMDUVBQAg=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1039.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script><script src="beforeindexwaterfall_files/lux.js" async=""></script>
+<script type="text/javascript">
+var wptTemplate = 'Details';
+rumMapping = {'aft': 'custom0'};
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'KLHEA-LW4C7-LHTMB-YZBLM-2BJ54';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+        
+</script>
+<script type="text/javascript">
+;(function(){var e=typeof window!="undefined"?window:exports,t=[];e.performance||(e.performance={});e.performance.now||(e.performance.now=performance.now||performance.webkitNow||performance.msNow||performance.mozNow);if(!e.performance.now){var n=Date.now?Date.now():+(new Date);if(performance.timing&&performance.timing)n=performance.timing.navigationStart;e.performance.now=function(){var e=Date.now?Date.now():+(new Date);return e-n}}e.performance.mark||(e.performance.mark=e.performance.webkitMark?e.performance.webkitMark:function(n){t.push({name:n,entryType:"mark",startTime:e.performance.now(),duration:0})});e.performance.getEntriesByType||(e.performance.getEntriesByType=e.performance.webkitGetEntriesByType?e.performance.webkitGetEntriesByType:function(e){return e=="mark"?t:undefined})})();window.markUserTime=function(e){var t=window["requestAnimationFrame"]||function(e){setTimeout(e,0)};t(function(){window.performance.mark(e);if(window["console"]&&console["timeStamp"])console.timeStamp(e)})};(function(){var e=function(e,t,n){t=Math.round(t);if(t>=0&&t<36e5){if(!n&&window["_gaq"])_gaq.push(["_trackTiming","UserTimings",e,t]);if(n&&window["rumMapping"]&&window.rumMapping[e])BOOMR.plugins.RT.setTimer(window.rumMapping[e],t)}};utReportRUM=function(t){var n=window.performance.getEntriesByType("mark");var r={};for(i=0;i<n.length;i++){g="usertiming";if(r[g]==undefined||n[i].startTime>r[g])r[g]=n[i].startTime;p=n[i].name.match(/([^\.]+)\.([^\.]*)/);if(p&&p.length>2&&(r[p[1]]==undefined||n[i].startTime>r[p[1]]))r[p[1]]=n[i].startTime}for(g in r)e(g,r[g],t)};utOnLoad=function(){utReportRUM(false)};if(window["addEventListener"])window.addEventListener("load",utOnLoad,false);else if(window["attachEvent"])window.attachEvent("onload",utOnLoad);utSent=false;BOOMR=window.BOOMR||{};BOOMR.plugins=BOOMR.plugins||{};BOOMR.plugins.UserTiming={init:function(e){BOOMR.subscribe("page_ready",function(){if(!utSent){utReportRUM(true);utSent=true;BOOMR.sendBeacon()}})},is_complete:function(){return utSent}}})();
+</script>
+<link rel="stylesheet" href="beforeindexwaterfall_files/pagestyle.css" type="text/css">
+<style type="text/css">
+
+</style>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3755571-1']);
+_gaq.push(['_setCustomVar', 1, 'Template', 'Details', 3]);
+    _gaq.push(['_setSiteSpeedSampleRate', 100]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+        'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+    })();
+    </script><script src="beforeindexwaterfall_files/ga.js" async="true"></script>
+        <style type="text/css">
+        div.bar {
+            height:12px;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+
+        .left {text-align:left;}
+        .center {text-align:center;}
+
+        .indented1 {padding-left: 40pt;}
+        .indented2 {padding-left: 80pt;}
+
+        td {
+            white-space:nowrap;
+            text-align:left;
+            vertical-align:middle;
+        }
+
+        td.center {
+            text-align:center;
+        }
+
+        table.details {
+          margin-left:auto; margin-right:auto;
+          background: whitesmoke;
+          border-collapse: collapse;
+        }
+        table.details th, table.details td {
+          border: 1px silver solid;
+          padding: 0.2em;
+          text-align: center;
+          font-size: smaller;
+        }
+        table.details th {
+          background: gainsboro;
+        }
+        table.details caption {
+          margin-left: inherit;
+          margin-right: inherit;
+          background: whitesmoke;
+        }
+        table.details th.reqUrl, table.details td.reqUrl {
+          text-align: left;
+          width: 30em;
+          word-wrap: break-word;
+        }
+        table.details td.even {
+          background: gainsboro;
+        }
+        table.details td.odd {
+          background: whitesmoke;
+        }
+        table.details td.evenRender {
+          background: #dfffdf;
+        }
+        table.details td.oddRender {
+          background: #ecffec;
+        }
+        table.details td.evenDoc {
+          background: #dfdfff;
+        }
+        table.details td.oddDoc {
+          background: #ececff;
+        }
+        table.details td.warning {
+          background: #ffff88;
+        }
+        table.details td.error {
+          background: #ff8888;
+        }
+        .header_details {
+            display: none;
+        }
+        .a_request {
+            cursor: pointer;
+        }
+
+        #quicklinks_table {
+    margin: 0 auto;
+    line-height: 1.5em;
+    border-collapse: collapse;
+}
+#quicklinks_table tr.even {
+    background: whitesmoke;
+}
+#quicklinks_table td, #quicklinks_table th {
+    border: 1px silver solid;
+    padding: 0.5em;
+}
+#quicklinks_table th {
+    font-weight: bold;
+    background: gainsboro;
+}
+
+#back_to_top {
+    background:white;
+    position: fixed;
+    bottom:1em;
+    left:50%;
+    margin-left: 510px; /* 980px/2+20 */
+    padding:1em;
+    display: none;
+}
+
+.snippet_container {
+    display: none;
+    margin: 1em 0;
+}
+.snippet_container_requestHeaders {
+    text-align: left;
+    overflow: auto;
+    padding: 0 1em;
+}
+.accordion_block {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width:930px;
+}
+.accordion_opener {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    padding: 0.2em;
+    background: no-repeat 10px 50% transparent;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.accordion_opener.jkActive {
+    background-color: whitesmoke;
+}
+.accordion_closed {
+    background-image: url(/images/accordion_closed.png);
+}
+.accordion_opened {
+    background-image: url(/images/accordion_opened.png);
+}
+.accordion_loading {
+    background-image: url(/images/activity_indicator.gif);
+}
+div.waterfall-container {position: relative; left: 0; top: 0; clear:both;}
+img.waterfall-image {position: relative; left: 0; top: 0;}
+div.request-overlay {cursor:pointer; padding: 0; margin: 0; width: 928px; left: 1px; background-color: #FFF; overflow: hidden; opacity:0.9; filter:alpha(opacity=90);}
+div.request-overlay.selected {opacity:0.4; background-color: #129828;}
+div.transparent {opacity:0.0; filter:alpha(opacity=0);}
+div.dialog-title {display: inline;}
+div.dialog-title a {color: #fff;}
+div.request-dialog-radio {display:inline; padding-left: 20px; font-weight: normal; }
+.request-headers, .response-headers, .response-body {display:none;}
+
+.jqmWindow {display: none; position: fixed; top: 17%; left: 50%; margin-left: -300px; width: 600px; background-color: #dfdfdf; color: #333; border: 1px solid black; padding: 12px; }
+.jqmOverlay { background-color: #000; }
+div.jqDrag {cursor: move;}
+.jqResize {width: 100%; height: 3px; background: #dfdfdf; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3; cursor: ns-resize;}
+div.jqmDialog {display: none; position: absolute; top: 17%; right: 20px; width: 700px; height: 400px;
+                overflow: hidden; font-family:verdana,tahoma,helvetica;
+                color: #000; background: #fff; border: 1px solid #000; text-align: left;}
+div.jqmdTC { background: #303030; color: #000; height: 25px; padding: 7px 22px 5px 5px; font-family:"sans serif",verdana,tahoma,helvetica; font-weight: bold; * zoom: 1; cursor: move;}
+div.jqmdBC { height: 350px; padding: 7px 7px 7px; overflow: auto;}
+div.jqmdX { position: absolute; right: 7px; top: 8px; padding: 0 0 0 16px; height: 16px; width: 0px; background: url(/images/dialog-close.png) no-repeat 0px -16px; overflow: hidden;}
+div.jqmdX:hover {background-position: 0px 0px;}
+div.jqmdBC button {margin: 8px 10px 4px 10px; color: #777; background-color: #fff; cursor: pointer; }
+
+/* Jquery UI */
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+.ui-state-disabled { cursor: default !important; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.ui-widget-content { border: 1px solid #dddddd; background-color: #eeeeee; color: #333333; }
+.ui-widget-content a { color: #333333; }
+.ui-widget-header { border: 1px solid #e78f08; background-color: #f6a828; color: #ffffff; font-weight: bold; }
+.ui-widget-header a { color: #ffffff; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #cccccc; background-color: #cccccc; font-weight: bold; color: #1c94c4; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #1c94c4; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hovers { border: 1px solid #cccccc; background-color: #f6f6f6; font-weight: bold; color: #c77405; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #C00; background-color: #ffffff; font-weight: bold; color: #c00; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #eb8f00; text-decoration: none; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #c77405; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #ffffff; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #ffffff; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-icon { width: 16px; height: 16px; background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-content .ui-icon {background-image: url(/images/ui-icons_222222_256x240.png); }
+.ui-widget-header .ui-icon {background-image: url(/images/ui-icons_ffffff_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(/images/ui-icons_ef8c08_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(/images/ui-icons_228ef1_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(/images/ui-icons_ffd27a_256x240.png); }
+
+/* jQuery UI Button 1.8.17
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+.ui-button .ui-button-text { display: block; line-height: 1.1;  }
+.ui-button-text-only .ui-button-text { padding: 2px 5px; }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+input.ui-button { padding: .4em 1em; }
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+        </style>
+    <script type="text/javascript">// Promises 
+var _eid_promises = {}; 
+// Turn the incoming message from extension 
+// into pending Promise resolving 
+window.addEventListener("message", function(event) { 
+    if(event.source !== window) return; 
+    if(event.data.src && (event.data.src === "background.js")) { 
+        console.log("Page received: "); 
+        console.log(event.data); 
+        // Get the promise 
+        if(event.data.nonce) { 
+            var p = _eid_promises[event.data.nonce]; 
+            // resolve 
+            if(event.data.result === "ok") { 
+                if(event.data.signature !== undefined) { 
+                    p.resolve({hex: event.data.signature}); 
+                } else if(event.data.version !== undefined) { 
+                    p.resolve(event.data.extension + "/" + event.data.version); 
+                } else if(event.data.cert !== undefined) { 
+                    p.resolve({hex: event.data.cert}); 
+                } else { 
+                    console.log("No idea how to handle message"); 
+                    console.log(event.data); 
+                } 
+            } else { 
+                // reject 
+                p.reject(new Error(event.data.result)); 
+            } 
+            delete _eid_promises[event.data.nonce]; 
+        } else { 
+            console.log("No nonce in event msg"); 
+        } 
+    } 
+}, false); 
+ 
+ 
+function TokenSigning() { 
+    function nonce() { 
+        var val = ""; 
+        var hex = "abcdefghijklmnopqrstuvwxyz0123456789"; 
+        for(var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length)); 
+        return val; 
+    } 
+ 
+    function messagePromise(msg) { 
+        return new Promise(function(resolve, reject) { 
+            // amend with necessary metadata 
+            msg["nonce"] = nonce(); 
+            msg["src"] = "page.js"; 
+            // send message 
+            window.postMessage(msg, "*"); 
+            // and store promise callbacks 
+            _eid_promises[msg.nonce] = { 
+                resolve: resolve, 
+                reject: reject 
+            }; 
+        }); 
+    } 
+    this.getCertificate = function(options) { 
+        var msg = {type: "CERT", lang: options.lang}; 
+        console.log("getCertificate()"); 
+        return messagePromise(msg); 
+    }; 
+    this.sign = function(cert, hash, options) { 
+        var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang}; 
+        console.log("sign()"); 
+        return messagePromise(msg); 
+    }; 
+    this.getVersion = function() { 
+        console.log("getVersion()"); 
+        return messagePromise({ 
+            type: "VERSION" 
+        }); 
+    }; 
+}</script></head>
+    <body>
+        <div class="page">
+            <div id="wptAuthBar"><a href="https://www.webpagetest.org/forums/member.php?action=login">Login</a> &nbsp;|&nbsp; <a href="https://www.webpagetest.org/forums/member.php?action=register">Register</a> &nbsp;|&nbsp; <a href="https://www.webpagetest.org/oauth/login.php">Login with Google</a> </div>
+<div id="header">
+    <h1 class="logo"><a href="https://www.webpagetest.org/">WebPageTest</a></h1>
+    <div class="headerAd">
+    <a href="http://www.oreilly.com/pub/e/3425" target="_blank" onclick="wptBannerTrack();" title="Akamai - High Performance Images">
+<img src="beforeindexwaterfall_files/webinar.jpg" alt="Akamai - High Performance Images">
+</a>
+<script type="text/javascript">
+try{
+if( _gaq != undefined )
+    _gaq.push(['_trackEvent', 'Banner', 'Impression', 'Akamai_EC2']);
+}catch(err){}
+
+function wptBannerTrack()
+{
+    try{
+    if( _gaq != undefined )
+        _gaq.push(['_trackEvent', 'Banner', 'Click', 'Akamai_EC2']);
+    }catch(err){}
+    return true;
+}
+</script>
+    </div>
+</div>
+
+<div id="nav_bkg"><ul id="nav" class="cufon-dincond_black"><li><a title="Home" href="https://www.webpagetest.org/">Home</a></li><li class="current"><a title="Test Result" href="https://www.webpagetest.org/result/170623_ZX_MQF/">Test Result</a></li><li><a title="Test History" href="https://www.webpagetest.org/testlog/1/">Test History</a></li><li><a title="Forums" href="https://www.webpagetest.org/forums/">Forums</a></li><li><a title="Documentation (opens in a new tab)" href="https://sites.google.com/a/webpagetest.org/docs/" target="_blank">Documentation</a></li><li><a title="About" href="https://www.webpagetest.org/about">About</a></li></ul>
+
+</div>
+
+<div class="alert bold">Help us improve performance measurements by taking the <a href="http://www.speedperception.com/" title="SpeedPerception challenge 2.0">SpeedPerception challenge 2.0</a></div>    
+<div id="main">
+    <div class="level_2">
+        <div class="content-wrap">
+            <div class="content">
+
+            
+<div id="header_container"><div id="optimization"><div id="optimization_header"><div id="opthelp"><a href="https://sites.google.com/a/webpagetest.org/docs/other-resources/optimization-resources" title="Optimization Resources" target="_blank">Need help improving?</a></div>
+</div><div id="grades"><ul class="grades"><li class="first_byte_time"><a href="https://www.webpagetest.org/performance_optimization.php?test=170623_ZX_MQF&amp;run=3#first_byte_time"><h2 class="A">A</h2></a>First Byte Time</li><li class="keep_alive_enabled"><a href="https://www.webpagetest.org/performance_optimization.php?test=170623_ZX_MQF&amp;run=3#keep_alive_enabled"><h2 class="A">A</h2></a>Keep-alive Enabled</li><li class="compress_text"><a href="https://www.webpagetest.org/performance_optimization.php?test=170623_ZX_MQF&amp;run=3#compress_text"><h2 class="A">A</h2></a>Compress Transfer</li><li class="compress_images"><a href="https://www.webpagetest.org/performance_optimization.php?test=170623_ZX_MQF&amp;run=3#compress_images"><h2 class="NA">N/A</h2></a>Compress Images</li><li class="cache_static_content"><a href="https://www.webpagetest.org/performance_optimization.php?test=170623_ZX_MQF&amp;run=3#cache_static_content"><h2 class="F">F</h2></a>Cache static content</li><li class="use_of_cdn"><a href="https://www.webpagetest.org/performance_optimization.php?test=170623_ZX_MQF&amp;run=3#use_of_cdn"><h2 class="NA">X</h2></a>Effective use of CDN</li></ul></div></div><div id="header_data"><h2 class="alternate cufon-dincond_regular">Web Page Performance Test for<br><span class="medium colored">oml1111.site/</span></h2><p class="heading_details"><strong>From:</strong> California USA - EC2 - <b>Chrome</b> - <b>Cable</b><br>
+<span class="jsdate" date="1498209050">6/23/2017, 12:10:50 PM</span><br>
+</p></div></div><div id="test_results-container"><div id="test-1" class="test_results"><ul class="test_menu"><li><a href="https://www.webpagetest.org/result/170623_ZX_MQF/">Summary</a></li><li class="current"><a href="https://www.webpagetest.org/result/170623_ZX_MQF/3/details/">Details</a></li><li><a href="https://www.webpagetest.org/result/170623_ZX_MQF/3/performance_optimization/">Performance Review</a></li><li><a href="https://www.webpagetest.org/result/170623_ZX_MQF/3/breakdown/">Content Breakdown</a></li><li><a href="https://www.webpagetest.org/result/170623_ZX_MQF/3/domains/">Domains</a></li><li><a href="https://www.webpagetest.org/result/170623_ZX_MQF/3/screen_shot/">Screen Shot</a></li><li><a href="http://webspeedtest.cloudinary.com/results/170623_ZX_MQF" title="Image Analysis - Opens in a new window." target="_blank" rel="noopener" style="padding-right: 5px;">Image Analysis<img src="beforeindexwaterfall_files/new_badge.png" style="top: 0; float: right;"></a></li></ul><div class="test_results-content"><script type="text/javascript">
+  markUserTime('aft.Site Header');
+</script>
+
+            <div id="result">
+                <div id="download">
+                    <div id="testinfo">
+                        Tester: i-72d75ac7<br><b>First View only</b><br>Test runs: <b>3</b><br>                    </div>
+                    <a href="https://www.webpagetest.org/export.php?test=170623_ZX_MQF&amp;run=3&amp;cached=0&amp;bodies=1&amp;pretty=1">Export HTTP Archive (.har)</a><br><a href="https://www.webpagetest.org/custom_metrics.php?test=170623_ZX_MQF&amp;run=3&amp;cached=0">Custom Metrics</a><br>                </div>
+                <div class="cleared"></div>
+                <br>
+
+                <table id="tableResults" class="pretty" cellspacing="0" cellpadding="10" border="1" align="center">
+<tbody><tr>
+<th class="empty" colspan="7" valign="middle" align="center"></th>
+<th class="border" colspan="3" valign="middle" align="center">Document Complete</th>
+<th class="border" colspan="4" valign="middle" align="center">Fully Loaded</th>
+</tr>
+<tr><th class="empty" valign="middle" align="center"></th>
+<th valign="middle" align="center">Load Time</th>
+<th valign="middle" align="center">First Byte</th>
+<th valign="middle" align="center">Start Render</th>
+<th valign="middle" align="center">Visually Complete</th>
+<th valign="middle" align="center"><a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index" target="_blank">Speed Index</a></th>
+<th valign="middle" align="center">Result (error&nbsp;code)</th>
+<th class="border" valign="middle" align="center">Time</th>
+<th valign="middle" align="center">Requests</th>
+<th valign="middle" align="center">Bytes In</th>
+<th class="border" valign="middle" align="center">Time</th>
+<th valign="middle" align="center">Requests</th>
+<th valign="middle" align="center">Bytes In</th>
+<th valign="middle" align="center">Certificates</th>
+</tr><tr>
+<td valign="middle">First View (<a href="#run3">Run 3</a>)</td>
+<td id="LoadTime" valign="middle">1.164s</td>
+<td id="TTFB" valign="middle">0.239s</td>
+<td id="StartRender" valign="middle">1.256s</td>
+<td id="visualComplete" valign="middle">1.256s</td>
+<td id="SpeedIndex" valign="middle">1256</td>
+<td id="result" valign="middle">99999</td>
+<td id="DocComplete" class="border" valign="middle">1.164s</td>
+<td id="RequestsDoc" valign="middle">8</td>
+<td id="BytesInDoc" valign="middle">60 KB</td>
+<td id="FullyLoaded" class="border" valign="middle">1.902s</td>
+<td id="Requests" valign="middle">11</td>
+<td id="BytesIn" valign="middle">115 KB</td>
+<td id="CertificateBytes" valign="middle">13 KB</td>
+</tr>
+</tbody></table>
+                <br>
+                <table id="tableW3CTiming" class="pretty" cellspacing="0" cellpadding="10" border="1" align="center"><tbody><tr>
+<th>Colordepth</th><th>Images</th><th class="border">RUM First Paint</th><th><a href="http://w3c.github.io/navigation-timing/#h-processing-model">domInteractive</a></th><th><a href="http://w3c.github.io/navigation-timing/#h-processing-model">domContentLoaded</a></th><th><a href="http://w3c.github.io/navigation-timing/#h-processing-model">loadEvent</a></th></tr>
+<tr>
+<td>24</td><td>[]</td><td class="border">1.111s</td><td>1.011s</td><td>1.011s - 1.011s (0.000s)</td><td>1.125s - 1.138s (0.013s)</td></tr>
+</tbody></table><br>
+                <script type="text/javascript">
+                  markUserTime('aft.Detail Table');
+                </script>
+
+                
+                <div style="text-align:center;">
+                <h3 name="waterfall_view">Waterfall View</h3>
+                <table style="width:auto; font-size:11px; margin-left:auto; margin-right:auto; margin-top:11px;" cellspacing="0" cellpadding="2px" bordercolor="silver" border="1">
+<tbody><tr>
+<td><table><tbody><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:2px; background-color:#8FBC83"></div></td><td>msFirstPaint</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:2px; background-color:#FFC61A"></div></td><td>DOM Interactive</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#D888DF"></div></td><td>DOM Content Loaded</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#C0C0FF"></div></td><td>On Load</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></tbody></table></td>
+</tr>
+</tbody></table>
+<br><map name="waterfall_map_step1"><area href="#step1_request" alt="http://oml1111.site/" title="http://oml1111.site/" shape="RECT" coords="0,36,250,25">
+<area href="#step1_request1" alt="1: http://oml1111.site/" title="1: http://oml1111.site/" shape="RECT" coords="0,62,929,78">
+<area href="#step1_request2" alt="2: http://oml1111.site/static/style.css" title="2: http://oml1111.site/static/style.css" shape="RECT" coords="0,79,929,95">
+<area href="#step1_request3" alt="3: http://oml1111.site/static/utils.js" title="3: http://oml1111.site/static/utils.js" shape="RECT" coords="0,96,929,112">
+<area href="#step1_request4" alt="4: http://oml1111.site/static/login.js" title="4: http://oml1111.site/static/login.js" shape="RECT" coords="0,113,929,129">
+<area href="#step1_request5" alt="5: https://apis.google.com/js/platform.js?onload=onLoadCallback" title="5: https://apis.google.com/js/platform.js?onload=onLoadCallback" shape="RECT" coords="0,130,929,146">
+<area href="#step1_request6" alt="6: https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" title="6: https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" shape="RECT" coords="0,147,929,163">
+<area href="#step1_request7" alt="7: https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0" title="7: https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0" shape="RECT" coords="0,164,929,180">
+<area href="#step1_request8" alt="8: http://oml1111.site/favicon.ico" title="8: http://oml1111.site/favicon.ico" shape="RECT" coords="0,181,929,197">
+<area href="#step1_request9" alt="9: https://accounts.google.com/o/oauth2/iframe" title="9: https://accounts.google.com/o/oauth2/iframe" shape="RECT" coords="0,198,929,214">
+<area href="#step1_request10" alt="10: https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js" title="10: https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js" shape="RECT" coords="0,215,929,231">
+<area href="#step1_request11" alt="11: https://accounts.google.com/o/oauth2/iframerpc?action=checkOrigin&amp;origin=http%3A%2F%2Foml1111.site&amp;client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com" title="11: https://accounts.google.com/o/oauth2/iframerpc?action=checkOrigin&amp;origin=http%3A%2F%2Foml1111.site&amp;client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com" shape="RECT" coords="0,232,929,248">
+</map><div class="waterfall-container"><img class="waterfall-image" alt="" onload="markUserTime('aft.Waterfall')" usemap="#waterfall_map_step1" id="waterfall_step1" src="beforeindexwaterfall_files/waterfall_002.png"><div class="transparent request-overlay" id="request-overlay-step1-1" title="1: http://oml1111.site/" onclick="SelectRequest(1, 1)" style="position: absolute; top: 62px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-2" title="2: http://oml1111.site/static/style.css" onclick="SelectRequest(1, 2)" style="position: absolute; top: 79px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-3" title="3: http://oml1111.site/static/utils.js" onclick="SelectRequest(1, 3)" style="position: absolute; top: 96px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-4" title="4: http://oml1111.site/static/login.js" onclick="SelectRequest(1, 4)" style="position: absolute; top: 113px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-5" title="5: https://apis.google.com/js/platform.js?onload=onLoadCallback" onclick="SelectRequest(1, 5)" style="position: absolute; top: 130px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-6" title="6: https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" onclick="SelectRequest(1, 6)" style="position: absolute; top: 147px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-7" title="7: https://apis.google.com/_/scs/apps-static/_/js...TcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0" onclick="SelectRequest(1, 7)" style="position: absolute; top: 164px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-8" title="8: http://oml1111.site/favicon.ico" onclick="SelectRequest(1, 8)" style="position: absolute; top: 181px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-9" title="9: https://accounts.google.com/o/oauth2/iframe" onclick="SelectRequest(1, 9)" style="position: absolute; top: 198px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-10" title="10: https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js" onclick="SelectRequest(1, 10)" style="position: absolute; top: 215px; height: 17px;"></div>
+<div class="transparent request-overlay" id="request-overlay-step1-11" title="11: https://accounts.google.com/o/oauth2/iframerpc..." onclick="SelectRequest(1, 11)" style="position: absolute; top: 232px; height: 17px;"></div>
+    <div id="request-dialog-step1" class="jqmDialog">
+        <div id="dialog-header-step1" class="jqmdTC jqDrag">
+            <div id="dialog-title-step1" class="dialog-title"></div>
+            <div id="request-dialog-radio-step1" class="request-dialog-radio">
+                <span id="request-details-button-step1"><input id="radio1-step1" value="request-details-step1" name="radio" checked="checked" type="radio"><label for="radio1-step1">Details</label></span>
+                <span id="request-headers-button-step1"><input id="radio2-step1" value="request-headers-step1" name="radio" type="radio"><label for="radio2-step1">Request</label></span>
+                <span id="response-headers-button-step1"><input id="radio3-step1" value="response-headers-step1" name="radio" type="radio"><label for="radio3-step1">Response</label></span>
+                <span id="response-body-button-step1"><input id="radio4-step1" value="response-body-step1" name="radio" type="radio"><label for="radio4-step1">Object</label></span>
+            </div>
+        </div>
+        <div class="jqmdBC">
+            <div id="dialog-contents-step1" class="jqmdMSG">
+                <div id="request-details-step1" class="dialog-tab-content request-details"></div>
+                <div id="request-headers-step1" class="dialog-tab-content request-headers"></div>
+                <div id="response-headers-step1" class="dialog-tab-content response-headers"></div>
+                <div id="response-body-step1" class="dialog-tab-content response-body"></div>
+            </div>
+        </div>
+        <div class="jqmdX jqmClose"></div>
+    </div>
+    <div class="waterfall_marker"></div></div><script type="text/javascript">
+if (typeof wptRequestCount == 'undefined') var wptRequestCount = {};
+if (typeof wptRequestData == 'undefined') var wptRequestData = {};
+if (typeof wptPageData == 'undefined') var wptPageData = {};
+if (typeof wptNoLinks == 'undefined') var wptNoLinks=1;
+wptRequestCount['step1']=11;
+wptRequestData['step1']=[{"ip_addr":"34.209.16.230","method":"GET","host":"oml1111.site","url":"\/","responseCode":200,"load_ms":57,"ttfb_ms":57,"load_start":182,"bytesOut":383,"bytesIn":1155,"objectSize":762,"contentType":"text\/html","contentEncoding":"gzip","type":3,"socket":10,"score_cache":-1,"score_cdn":-1,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":0,"dns_ms":-1,"connect_ms":53,"ssl_ms":-1,"gzip_total":762,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":-1,"dns_start":0,"dns_end":129,"connect_start":129,"connect_end":182,"ssl_start":0,"ssl_end":0,"server_count":1,"server_rtt":52,"client_port":54733,"jpeg_scan_count":0,"priority":"VeryHigh","request_id":1,"was_pushed":0,"initiator_type":"other","initiator_detail":"{\"type\":\"other\"}","certificate_bytes":0,"objectSizeUncompressed":1427,"full_url":"http:\/\/oml1111.site\/","score_progressive_jpeg":-1,"load_end":239,"ttfb_start":182,"ttfb_end":239,"download_start":239,"download_end":239,"download_ms":0,"all_start":129,"all_end":239,"all_ms":110,"headers":{"request":["GET \/ HTTP\/1.1","Host: oml1111.site","Connection: keep-alive","Upgrade-Insecure-Requests: 1","User-Agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8","Accept-Encoding: gzip, deflate","Accept-Language: en-US,en;q=0.8"],"response":["HTTP\/1.1 200 OK","Date: Fri, 23 Jun 2017 09:10:45 GMT","Server: Apache\/2.4.18 (Ubuntu)","Set-Cookie: user=; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Path=\/","Set-Cookie: password_hash=; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Path=\/","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 762","Keep-Alive: timeout=5, max=100","Connection: Keep-Alive","Content-Type: text\/html; charset=utf-8"]},"index":0,"number":1},{"ip_addr":"34.209.16.230","method":"GET","host":"oml1111.site","url":"\/static\/style.css","responseCode":200,"load_ms":64,"ttfb_ms":64,"load_start":263,"bytesOut":333,"bytesIn":597,"objectSize":159,"expires":"Fri, 23 Jun 2017 21:10:45 GMT","cacheControl":"public, max-age=43200","contentType":"text\/css","contentEncoding":"gzip","type":3,"socket":10,"score_cache":50,"score_cdn":0,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":0,"dns_ms":-1,"connect_ms":-1,"ssl_ms":-1,"gzip_total":159,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":43200,"dns_start":0,"dns_end":0,"connect_start":0,"connect_end":0,"ssl_start":0,"ssl_end":0,"initiator":"http:\/\/oml1111.site\/","initiator_line":5,"server_count":1,"server_rtt":52,"client_port":54733,"jpeg_scan_count":0,"priority":"VeryHigh","request_id":2,"was_pushed":0,"initiator_type":"parser","initiator_detail":"{\"lineNumber\":5,\"type\":\"parser\",\"url\":\"http:\/\/oml1111.site\/\"}","certificate_bytes":0,"objectSizeUncompressed":244,"full_url":"http:\/\/oml1111.site\/static\/style.css","score_progressive_jpeg":-1,"load_end":327,"ttfb_start":263,"ttfb_end":327,"download_start":327,"download_end":327,"download_ms":0,"all_start":263,"all_end":327,"all_ms":64,"headers":{"request":["GET \/static\/style.css HTTP\/1.1","Host: oml1111.site","Connection: keep-alive","User-Agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","Accept: text\/css,*\/*;q=0.1","Referer: http:\/\/oml1111.site\/","Accept-Encoding: gzip, deflate","Accept-Language: en-US,en;q=0.8"],"response":["HTTP\/1.1 200 OK","Date: Fri, 23 Jun 2017 09:10:45 GMT","Server: Apache\/2.4.18 (Ubuntu)","Cache-Control: public, max-age=43200","Expires: Fri, 23 Jun 2017 21:10:45 GMT","ETag: \"1498085413.2380822-244-241700451\"","Accept-Ranges: bytes","Last-Modified: Wed, 21 Jun 2017 22:50:13 GMT","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 159","Keep-Alive: timeout=5, max=99","Connection: Keep-Alive","Content-Type: text\/css; charset=utf-8"]},"index":1,"number":2},{"ip_addr":"34.209.16.230","method":"GET","host":"oml1111.site","url":"\/static\/utils.js","responseCode":200,"load_ms":59,"ttfb_ms":59,"load_start":269,"bytesOut":317,"bytesIn":701,"objectSize":262,"expires":"Fri, 23 Jun 2017 21:10:45 GMT","cacheControl":"public, max-age=43200","contentType":"application\/javascript","contentEncoding":"gzip","type":3,"socket":11,"score_cache":50,"score_cdn":0,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":0,"dns_ms":-1,"connect_ms":53,"ssl_ms":-1,"gzip_total":262,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":43200,"dns_start":0,"dns_end":0,"connect_start":129,"connect_end":182,"ssl_start":0,"ssl_end":0,"initiator":"http:\/\/oml1111.site\/","initiator_line":9,"server_count":1,"server_rtt":52,"client_port":54734,"jpeg_scan_count":0,"priority":"High","request_id":3,"was_pushed":0,"initiator_type":"parser","initiator_detail":"{\"lineNumber\":9,\"type\":\"parser\",\"url\":\"http:\/\/oml1111.site\/\"}","certificate_bytes":0,"objectSizeUncompressed":377,"full_url":"http:\/\/oml1111.site\/static\/utils.js","score_progressive_jpeg":-1,"load_end":328,"ttfb_start":269,"ttfb_end":328,"download_start":328,"download_end":328,"download_ms":0,"all_start":129,"all_end":328,"all_ms":112,"headers":{"request":["GET \/static\/utils.js HTTP\/1.1","Host: oml1111.site","Connection: keep-alive","User-Agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","Accept: *\/*","Referer: http:\/\/oml1111.site\/","Accept-Encoding: gzip, deflate","Accept-Language: en-US,en;q=0.8"],"response":["HTTP\/1.1 200 OK","Date: Fri, 23 Jun 2017 09:10:45 GMT","Server: Apache\/2.4.18 (Ubuntu)","Cache-Control: public, max-age=43200","Expires: Fri, 23 Jun 2017 21:10:45 GMT","ETag: \"1498150235.6438336-377-4293660151\"","Accept-Ranges: bytes","Last-Modified: Thu, 22 Jun 2017 16:50:35 GMT","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 262","Keep-Alive: timeout=5, max=100","Connection: Keep-Alive","Content-Type: application\/javascript"]},"index":2,"number":3},{"ip_addr":"34.209.16.230","method":"GET","host":"oml1111.site","url":"\/static\/login.js","responseCode":200,"load_ms":76,"ttfb_ms":76,"load_start":328,"bytesOut":317,"bytesIn":1153,"objectSize":716,"expires":"Fri, 23 Jun 2017 21:10:45 GMT","cacheControl":"public, max-age=43200","contentType":"application\/javascript","contentEncoding":"gzip","type":3,"socket":10,"score_cache":50,"score_cdn":0,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":0,"dns_ms":-1,"connect_ms":-1,"ssl_ms":-1,"gzip_total":716,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":43200,"dns_start":0,"dns_end":0,"connect_start":0,"connect_end":0,"ssl_start":0,"ssl_end":0,"initiator":"http:\/\/oml1111.site\/","initiator_line":18,"server_count":1,"server_rtt":52,"client_port":54733,"jpeg_scan_count":0,"priority":"High","request_id":4,"was_pushed":0,"initiator_type":"parser","initiator_detail":"{\"lineNumber\":18,\"type\":\"parser\",\"url\":\"http:\/\/oml1111.site\/\"}","certificate_bytes":0,"objectSizeUncompressed":1475,"full_url":"http:\/\/oml1111.site\/static\/login.js","score_progressive_jpeg":-1,"load_end":404,"ttfb_start":328,"ttfb_end":404,"download_start":404,"download_end":404,"download_ms":0,"all_start":328,"all_end":404,"all_ms":76,"headers":{"request":["GET \/static\/login.js HTTP\/1.1","Host: oml1111.site","Connection: keep-alive","User-Agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","Accept: *\/*","Referer: http:\/\/oml1111.site\/","Accept-Encoding: gzip, deflate","Accept-Language: en-US,en;q=0.8"],"response":["HTTP\/1.1 200 OK","Date: Fri, 23 Jun 2017 09:10:45 GMT","Server: Apache\/2.4.18 (Ubuntu)","Cache-Control: public, max-age=43200","Expires: Fri, 23 Jun 2017 21:10:45 GMT","ETag: \"1498137361.95417-1475-4283567583\"","Accept-Ranges: bytes","Last-Modified: Thu, 22 Jun 2017 13:16:01 GMT","Vary: Accept-Encoding","Content-Encoding: gzip","Content-Length: 716","Keep-Alive: timeout=5, max=98","Connection: Keep-Alive","Content-Type: application\/javascript"]},"index":3,"number":4},{"ip_addr":"216.58.195.78","method":"GET","host":"apis.google.com","url":"\/js\/platform.js?onload=onLoadCallback","responseCode":200,"load_ms":102,"ttfb_ms":77,"load_start":611,"bytesOut":197,"bytesIn":16803,"objectSize":15988,"expires":"Fri, 23 Jun 2017 09:10:45 GMT","cacheControl":"private, max-age=1800, stale-while-revalidate=1800","contentType":"application\/javascript","contentEncoding":"gzip","type":3,"socket":14,"score_cache":0,"score_cdn":100,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":1,"dns_ms":51,"connect_ms":41,"ssl_ms":64,"gzip_total":15988,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":1800,"cdn_provider":"Google","dns_start":408,"dns_end":459,"connect_start":459,"connect_end":500,"ssl_start":500,"ssl_end":564,"initiator":"http:\/\/oml1111.site\/","initiator_line":16,"server_count":1,"server_rtt":40,"client_port":54737,"jpeg_scan_count":0,"priority":"Low","request_id":9,"was_pushed":0,"initiator_type":"parser","initiator_detail":"{\"lineNumber\":16,\"type\":\"parser\",\"url\":\"http:\/\/oml1111.site\/\"}","protocol":"HTTP\/2","http2_stream_id":1,"http2_stream_dependency":0,"http2_stream_weight":147,"http2_stream_exclusive":1,"certificate_bytes":3161,"objectSizeUncompressed":41445,"full_url":"https:\/\/apis.google.com\/js\/platform.js?onload=onLoadCallback","score_progressive_jpeg":-1,"load_end":713,"ttfb_start":611,"ttfb_end":688,"download_start":688,"download_end":713,"download_ms":25,"all_start":408,"all_end":713,"all_ms":258,"headers":{"request":[":method: GET",":authority: apis.google.com",":scheme: https",":path: \/js\/platform.js?onload=onLoadCallback","user-agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","accept: *\/*","referer: http:\/\/oml1111.site\/","accept-encoding: gzip, deflate, br","accept-language: en-US,en;q=0.8"],"response":[":status: 200","content-type: application\/javascript; charset=utf-8","content-security-policy: script-src 'unsafe-inline' 'unsafe-eval' 'self' https:\/\/*.gstatic.com https:\/\/www.google-analytics.com https:\/\/pagead2.googleadservices.com https:\/\/pagead2.googlesyndication.com https:\/\/tpc.googlesyndication.com https:\/\/s.ytimg.com https:\/\/www.youtube.com;report-uri \/_\/cspreport\/es_oz_20170621.10_p0","x-ua-compatible: IE=edge, chrome=1","timing-allow-origin: *","etag: \"8fdaac48d9e076a7d04e308d5747f81a\"","expires: Fri, 23 Jun 2017 09:10:45 GMT","date: Fri, 23 Jun 2017 09:10:45 GMT","cache-control: private, max-age=1800, stale-while-revalidate=1800","strict-transport-security: max-age=10886400","p3p: CP=\"This is not a P3P policy! See https:\/\/support.google.com\/accounts\/answer\/151657?hl=en for more info.\"","content-encoding: gzip","server: ESF","x-xss-protection: 1; mode=block","x-frame-options: SAMEORIGIN","x-content-type-options: nosniff","set-cookie: NID=106=LtTbOGKYuusLHpl0mlS2hCuzEnqPIq4DguAHwm-GnxW--G_BIBffWxhd6Ae03zpMFWneLgNTPoLjYUyZMkbY1MPcjd9ee2y2P1JHXoAzyJf8Zduh6iyV4i-UaBOwRzky;Domain=.google.com;Path=\/;Expires=Sat, 23-Dec-2017 09:10:45 GMT;HttpOnly","alt-svc: quic=\":443\"; ma=2592000; v=\"39,38,37,36,35\""]},"index":4,"number":5},{"ip_addr":"209.85.232.95","method":"GET","host":"ajax.googleapis.com","url":"\/ajax\/libs\/jquery\/3.2.1\/jquery.min.js","responseCode":200,"load_ms":245,"ttfb_ms":108,"load_start":687,"bytesOut":200,"bytesIn":30601,"objectSize":30306,"expires":"Fri, 15 Jun 2018 16:37:01 GMT","cacheControl":"public, max-age=31536000, stale-while-revalidate=2592000","contentType":"text\/javascript","contentEncoding":"gzip","type":3,"socket":13,"score_cache":100,"score_cdn":100,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":1,"dns_ms":188,"connect_ms":107,"ssl_ms":119,"gzip_total":30306,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":30871576,"cdn_provider":"Google","dns_start":269,"dns_end":457,"connect_start":457,"connect_end":564,"ssl_start":564,"ssl_end":683,"initiator":"http:\/\/oml1111.site\/","initiator_line":8,"server_count":8,"server_rtt":106,"client_port":54736,"jpeg_scan_count":0,"priority":"High","request_id":10,"was_pushed":0,"initiator_type":"parser","initiator_detail":"{\"lineNumber\":8,\"type\":\"parser\",\"url\":\"http:\/\/oml1111.site\/\"}","protocol":"HTTP\/2","http2_stream_id":1,"http2_stream_dependency":0,"http2_stream_weight":220,"http2_stream_exclusive":1,"certificate_bytes":3231,"objectSizeUncompressed":86659,"full_url":"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/3.2.1\/jquery.min.js","score_progressive_jpeg":-1,"load_end":932,"ttfb_start":687,"ttfb_end":795,"download_start":795,"download_end":932,"download_ms":137,"all_start":269,"all_end":932,"all_ms":659,"headers":{"request":[":method: GET",":authority: ajax.googleapis.com",":scheme: https",":path: \/ajax\/libs\/jquery\/3.2.1\/jquery.min.js","user-agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","accept: *\/*","referer: http:\/\/oml1111.site\/","accept-encoding: gzip, deflate, br","accept-language: en-US,en;q=0.8"],"response":[":status: 200","accept-ranges: bytes","vary: Accept-Encoding","content-encoding: gzip","content-type: text\/javascript; charset=UTF-8","access-control-allow-origin: *","timing-allow-origin: *","content-length: 30306","date: Thu, 15 Jun 2017 16:37:01 GMT","expires: Fri, 15 Jun 2018 16:37:01 GMT","last-modified: Fri, 24 Mar 2017 20:55:54 GMT","x-content-type-options: nosniff","server: sffe","x-xss-protection: 1; mode=block","cache-control: public, max-age=31536000, stale-while-revalidate=2592000","age: 664424","alt-svc: quic=\":443\"; ma=2592000; v=\"38,37,36,35\""]},"index":5,"number":6},{"ip_addr":"216.58.195.78","method":"GET","host":"apis.google.com","url":"\/_\/scs\/apps-static\/_\/js\/k=oz.gapi.en_US.wAjVcoJfy54.O\/m=auth2\/rt=j\/sv=1\/d=1\/ed=1\/am=AQ\/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg\/cb=gapi.loaded_0","responseCode":200,"load_ms":83,"ttfb_ms":40,"load_start":1156,"bytesOut":237,"bytesIn":26697,"objectSize":26532,"expires":"Fri, 22 Jun 2018 19:11:18 GMT","cacheControl":"public, immutable, max-age=31536000","contentType":"text\/javascript","contentEncoding":"gzip","type":3,"socket":14,"score_cache":100,"score_cdn":100,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":1,"dns_ms":-1,"connect_ms":-1,"ssl_ms":-1,"gzip_total":26532,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":31485632,"cdn_provider":"Google","dns_start":0,"dns_end":0,"connect_start":0,"connect_end":0,"ssl_start":0,"ssl_end":0,"initiator":"https:\/\/apis.google.com\/js\/platform.js?onload=onLoadCallback","initiator_line":13,"initiator_column":386,"server_count":1,"server_rtt":40,"client_port":54737,"jpeg_scan_count":0,"priority":"Low","request_id":13,"was_pushed":0,"initiator_type":"script","initiator_function":"lb","initiator_detail":"{\"stack\":{\"callFrames\":[{\"columnNumber\":386,\"functionName\":\"lb\",\"lineNumber\":13,\"scriptId\":\"44\",\"url\":\"https:\/\/apis.google.com\/js\/platform.js?onload=onLoadCallback\"}]},\"type\":\"script\"}","protocol":"HTTP\/2","http2_stream_id":3,"http2_stream_dependency":0,"http2_stream_weight":147,"http2_stream_exclusive":1,"certificate_bytes":0,"objectSizeUncompressed":78851,"full_url":"https:\/\/apis.google.com\/_\/scs\/apps-static\/_\/js\/k=oz.gapi.en_US.wAjVcoJfy54.O\/m=auth2\/rt=j\/sv=1\/d=1\/ed=1\/am=AQ\/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg\/cb=gapi.loaded_0","score_progressive_jpeg":-1,"load_end":1239,"ttfb_start":1156,"ttfb_end":1196,"download_start":1196,"download_end":1239,"download_ms":43,"all_start":1156,"all_end":1239,"all_ms":83,"headers":{"request":[":method: GET",":authority: apis.google.com",":scheme: https",":path: \/_\/scs\/apps-static\/_\/js\/k=oz.gapi.en_US.wAjVcoJfy54.O\/m=auth2\/rt=j\/sv=1\/d=1\/ed=1\/am=AQ\/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg\/cb=gapi.loaded_0","user-agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","accept: *\/*","referer: http:\/\/oml1111.site\/","accept-encoding: gzip, deflate, br","accept-language: en-US,en;q=0.8","cookie: NID=106=LtTbOGKYuusLHpl0mlS2hCuzEnqPIq4DguAHwm-GnxW--G_BIBffWxhd6Ae03zpMFWneLgNTPoLjYUyZMkbY1MPcjd9ee2y2P1JHXoAzyJf8Zduh6iyV4i-UaBOwRzky"],"response":[":status: 200","accept-ranges: bytes","vary: Accept-Encoding","content-encoding: gzip","content-type: text\/javascript; charset=UTF-8","content-length: 26532","date: Thu, 22 Jun 2017 19:11:18 GMT","expires: Fri, 22 Jun 2018 19:11:18 GMT","last-modified: Wed, 21 Jun 2017 20:49:45 GMT","x-content-type-options: nosniff","server: sffe","x-xss-protection: 1; mode=block","cache-control: public, immutable, max-age=31536000","age: 50368","alt-svc: quic=\":443\"; ma=2592000; v=\"39,38,37,36,35\""]},"index":6,"number":7},{"ip_addr":"34.209.16.230","method":"GET","host":"oml1111.site","url":"\/favicon.ico","responseCode":404,"load_ms":67,"ttfb_ms":67,"load_start":1158,"bytesOut":349,"bytesIn":429,"objectSize":233,"contentType":"text\/html","type":3,"socket":10,"score_cache":0,"score_cdn":-1,"score_gzip":-1,"score_cookies":-1,"score_keep-alive":-1,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":0,"dns_ms":-1,"connect_ms":-1,"ssl_ms":-1,"gzip_total":0,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":0,"dns_start":0,"dns_end":0,"connect_start":0,"connect_end":0,"ssl_start":0,"ssl_end":0,"server_count":1,"server_rtt":52,"client_port":54733,"jpeg_scan_count":0,"priority":"High","request_id":14,"was_pushed":0,"initiator_type":"other","initiator_detail":"{\"type\":\"other\"}","certificate_bytes":0,"objectSizeUncompressed":233,"full_url":"http:\/\/oml1111.site\/favicon.ico","score_progressive_jpeg":-1,"load_end":1225,"ttfb_start":1158,"ttfb_end":1225,"download_start":1225,"download_end":1225,"download_ms":0,"all_start":1158,"all_end":1225,"all_ms":67,"headers":{"request":["GET \/favicon.ico HTTP\/1.1","Host: oml1111.site","Connection: keep-alive","User-Agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","Accept: image\/webp,image\/apng,image\/*,*\/*;q=0.8","Referer: http:\/\/oml1111.site\/","Accept-Encoding: gzip, deflate","Accept-Language: en-US,en;q=0.8"],"response":["HTTP\/1.1 404 NOT FOUND","Date: Fri, 23 Jun 2017 09:10:46 GMT","Server: Apache\/2.4.18 (Ubuntu)","Content-Length: 233","Keep-Alive: timeout=5, max=97","Connection: Keep-Alive","Content-Type: text\/html"]},"index":7,"number":8},{"ip_addr":"172.217.6.45","method":"GET","host":"accounts.google.com","url":"\/o\/oauth2\/iframe","responseCode":200,"load_ms":59,"ttfb_ms":57,"load_start":1477,"bytesOut":376,"bytesIn":473,"objectSize":304,"expires":"Sat, 24 Jun 2017 09:10:46 GMT","cacheControl":"public, max-age=86400","contentType":"text\/html","contentEncoding":"gzip","type":3,"socket":17,"score_cache":50,"score_cdn":-1,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":1,"dns_ms":44,"connect_ms":32,"ssl_ms":61,"gzip_total":304,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":86400,"cdn_provider":"Google","dns_start":1335,"dns_end":1379,"connect_start":1379,"connect_end":1411,"ssl_start":1411,"ssl_end":1472,"initiator":"https:\/\/apis.google.com\/_\/scs\/apps-static\/_\/js\/k=oz.gapi.en_US.wAjVcoJfy54.O\/m=auth2\/rt=j\/sv=1\/d=1\/ed=1\/am=AQ\/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg\/cb=gapi.loaded_0","initiator_line":126,"initiator_column":95,"server_count":1,"server_rtt":31,"client_port":54740,"jpeg_scan_count":0,"priority":"VeryHigh","request_id":17,"was_pushed":0,"initiator_type":"script","initiator_function":"_.MI.tS","initiator_detail":"{\"stack\":{\"callFrames\":[{\"columnNumber\":95,\"functionName\":\"_.MI.tS\",\"lineNumber\":126,\"scriptId\":\"45\",\"url\":\"https:\/\/apis.google.com\/_\/scs\/apps-static\/_\/js\/k=oz.gapi.en_US.wAjVcoJfy54.O\/m=auth2\/rt=j\/sv=1\/d=1\/ed=1\/am=AQ\/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg\/cb=gapi.loaded_0\"}]},\"type\":\"script\"}","protocol":"HTTP\/2","http2_stream_id":1,"http2_stream_dependency":0,"http2_stream_weight":256,"http2_stream_exclusive":1,"certificate_bytes":3171,"objectSizeUncompressed":452,"full_url":"https:\/\/accounts.google.com\/o\/oauth2\/iframe","score_progressive_jpeg":-1,"load_end":1536,"ttfb_start":1477,"ttfb_end":1534,"download_start":1534,"download_end":1536,"download_ms":2,"all_start":1335,"all_end":1536,"all_ms":196,"headers":{"request":[":method: GET",":authority: accounts.google.com",":scheme: https",":path: \/o\/oauth2\/iframe","upgrade-insecure-requests: 1","user-agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8","referer: http:\/\/oml1111.site\/","accept-encoding: gzip, deflate, br","accept-language: en-US,en;q=0.8","cookie: NID=106=LtTbOGKYuusLHpl0mlS2hCuzEnqPIq4DguAHwm-GnxW--G_BIBffWxhd6Ae03zpMFWneLgNTPoLjYUyZMkbY1MPcjd9ee2y2P1JHXoAzyJf8Zduh6iyV4i-UaBOwRzky"],"response":[":status: 200","content-type: text\/html; charset=utf-8","expires: Sat, 24 Jun 2017 09:10:46 GMT","date: Fri, 23 Jun 2017 09:10:46 GMT","cache-control: public, max-age=86400","content-encoding: gzip","server: ESF","x-xss-protection: 1; mode=block","alt-svc: quic=\":443\"; ma=2592000; v=\"39,38,37,36,35\""]},"index":8,"number":9},{"ip_addr":"216.58.194.163","method":"GET","host":"ssl.gstatic.com","url":"\/accounts\/o\/4009868167-idpiframe.js","responseCode":200,"load_ms":60,"ttfb_ms":36,"load_start":1708,"bytesOut":209,"bytesIn":14341,"objectSize":14097,"expires":"Fri, 22 Jun 2018 00:09:46 GMT","cacheControl":"public, max-age=31536000","contentType":"text\/javascript","contentEncoding":"gzip","type":3,"socket":18,"score_cache":100,"score_cdn":100,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":1,"dns_ms":58,"connect_ms":32,"ssl_ms":63,"gzip_total":14097,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":31417140,"cdn_provider":"Google","dns_start":1541,"dns_end":1599,"connect_start":1599,"connect_end":1631,"ssl_start":1631,"ssl_end":1694,"initiator":"https:\/\/accounts.google.com\/o\/oauth2\/iframe","server_count":1,"server_rtt":31,"client_port":54741,"jpeg_scan_count":0,"priority":"High","request_id":19,"was_pushed":0,"initiator_type":"parser","initiator_detail":"{\"lineNumber\":0,\"type\":\"parser\",\"url\":\"https:\/\/accounts.google.com\/o\/oauth2\/iframe\"}","protocol":"HTTP\/2","http2_stream_id":1,"http2_stream_dependency":0,"http2_stream_weight":220,"http2_stream_exclusive":1,"certificate_bytes":3916,"objectSizeUncompressed":45400,"full_url":"https:\/\/ssl.gstatic.com\/accounts\/o\/4009868167-idpiframe.js","score_progressive_jpeg":-1,"load_end":1768,"ttfb_start":1708,"ttfb_end":1744,"download_start":1744,"download_end":1768,"download_ms":24,"all_start":1541,"all_end":1768,"all_ms":213,"headers":{"request":[":method: GET",":authority: ssl.gstatic.com",":scheme: https",":path: \/accounts\/o\/4009868167-idpiframe.js","user-agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","accept: *\/*","referer: https:\/\/accounts.google.com\/o\/oauth2\/iframe","accept-encoding: gzip, deflate, br","accept-language: en-US,en;q=0.8"],"response":[":status: 200","accept-ranges: bytes","vary: Accept-Encoding","content-encoding: gzip","content-type: text\/javascript","content-length: 14097","date: Thu, 22 Jun 2017 00:09:46 GMT","expires: Fri, 22 Jun 2018 00:09:46 GMT","last-modified: Wed, 21 Jun 2017 10:27:27 GMT","x-content-type-options: nosniff","server: sffe","x-xss-protection: 1; mode=block","cache-control: public, max-age=31536000","age: 118860","alt-svc: quic=\":443\"; ma=2592000; v=\"39,38,37,36,35\""]},"index":9,"number":10},{"ip_addr":"172.217.6.45","method":"GET","host":"accounts.google.com","url":"\/o\/oauth2\/iframerpc?action=checkOrigin&origin=http%3A%2F%2Foml1111.site&client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com","responseCode":200,"load_ms":62,"ttfb_ms":62,"load_start":1840,"bytesOut":166,"bytesIn":140,"objectSize":40,"expires":"Fri, 23 Jun 2017 10:10:47 GMT","cacheControl":"public, max-age=3600","contentType":"application\/json","contentEncoding":"gzip","type":3,"socket":17,"score_cache":50,"score_cdn":-1,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":-1,"score_compress":-1,"score_etags":-1,"is_secure":1,"dns_ms":-1,"connect_ms":-1,"ssl_ms":-1,"gzip_total":40,"gzip_save":0,"minify_total":0,"minify_save":0,"image_total":0,"image_save":0,"cache_time":3600,"cdn_provider":"Google","dns_start":0,"dns_end":0,"connect_start":0,"connect_end":0,"ssl_start":0,"ssl_end":0,"initiator":"https:\/\/ssl.gstatic.com\/accounts\/o\/4009868167-idpiframe.js","initiator_line":41,"initiator_column":235,"server_count":1,"server_rtt":31,"client_port":54740,"jpeg_scan_count":0,"priority":"High","request_id":21,"was_pushed":0,"initiator_type":"script","initiator_function":"F","initiator_detail":"{\"stack\":{\"callFrames\":[{\"columnNumber\":235,\"functionName\":\"F\",\"lineNumber\":41,\"scriptId\":\"46\",\"url\":\"https:\/\/ssl.gstatic.com\/accounts\/o\/4009868167-idpiframe.js\"}]},\"type\":\"script\"}","protocol":"HTTP\/2","http2_stream_id":3,"http2_stream_dependency":0,"http2_stream_weight":220,"http2_stream_exclusive":1,"certificate_bytes":0,"objectSizeUncompressed":14,"full_url":"https:\/\/accounts.google.com\/o\/oauth2\/iframerpc?action=checkOrigin&origin=http%3A%2F%2Foml1111.site&client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com","score_progressive_jpeg":-1,"load_end":1902,"ttfb_start":1840,"ttfb_end":1902,"download_start":1902,"download_end":1902,"download_ms":0,"all_start":1840,"all_end":1902,"all_ms":62,"headers":{"request":[":method: GET",":authority: accounts.google.com",":scheme: https",":path: \/o\/oauth2\/iframerpc?action=checkOrigin&origin=http%3A%2F%2Foml1111.site&client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com","user-agent: Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36 PTST\/384","accept: *\/*","referer: https:\/\/accounts.google.com\/o\/oauth2\/iframe","accept-encoding: gzip, deflate, br","accept-language: en-US,en;q=0.8","cookie: NID=106=LtTbOGKYuusLHpl0mlS2hCuzEnqPIq4DguAHwm-GnxW--G_BIBffWxhd6Ae03zpMFWneLgNTPoLjYUyZMkbY1MPcjd9ee2y2P1JHXoAzyJf8Zduh6iyV4i-UaBOwRzky"],"response":[":status: 200","content-type: application\/json; charset=utf-8","expires: Fri, 23 Jun 2017 10:10:47 GMT","date: Fri, 23 Jun 2017 09:10:47 GMT","cache-control: public, max-age=3600","content-language: en-US","content-encoding: gzip","server: ESF","x-xss-protection: 1; mode=block","alt-svc: quic=\":443\"; ma=2592000; v=\"39,38,37,36,35\""]},"index":10,"number":11}];
+wptPageData['step1']={"URL":"http:\/\/oml1111.site\/","loadTime":1164,"TTFB":239,"bytesOut":6661,"bytesOutDoc":3843,"bytesIn":117966,"bytesInDoc":61385,"connections":6,"requests":11,"requestsFull":11,"requestsDoc":8,"responses_200":10,"responses_404":1,"responses_other":0,"result":99999,"render":1256,"fullyLoaded":1902,"cached":0,"docTime":1164,"domTime":0,"score_cache":55,"score_cdn":57,"score_gzip":100,"score_cookies":-1,"score_keep-alive":100,"score_minify":-1,"score_combine":100,"score_compress":-1,"score_etags":-1,"gzip_total":89166,"gzip_savings":0,"minify_total":0,"minify_savings":0,"image_total":0,"image_savings":0,"base_page_redirects":0,"optimization_checked":1,"aft":0,"domElements":36,"pageSpeedVersion":"1.9","title":"EIOtraining","titleTime":1153,"loadEventStart":1125,"loadEventEnd":1138,"domContentLoadedEventStart":1011,"domContentLoadedEventEnd":1011,"lastVisualChange":1256,"browser_name":"Google Chrome","browser_version":"59.0.3071.86","server_count":1,"server_rtt":52,"base_page_cdn":"","adult_site":0,"eventName":"Step 1","fixed_viewport":0,"score_progressive_jpeg":-1,"firstPaint":1111,"docCPUms":795.605,"fullyLoadedCPUms":1263.608,"docCPUpct":65,"fullyLoadedCPUpct":31,"isResponsive":-1,"browser_process_count":10,"browser_main_memory_kb":60444,"browser_other_private_memory_kb":57500,"browser_working_set_kb":117944,"domInteractive":1011,"domLoading":248,"base_page_ttfb":239,"visualComplete":1256,"SpeedIndex":1256,"certificate_bytes":13479,"date":1498209045,"custom":["Colordepth","Dpi","Images","Resolution"],"Colordepth":24,"Dpi":"{\"dppx\":1,\"dpcm\":37.79527559055118,\"dpi\":96}","Images":"[]","Resolution":"{\"absolute\":{\"height\":1024,\"width\":1280},\"available\":{\"height\":980,\"width\":1280}}","testTiming":{"ExtensionStart":1578,"ExtensionBlank":1058,"WaitForIdle":798,"LaunchBrowser":3532,"MeasureStep":4079,"ProcessRequests":3,"RunOptimizationChecks":0,"ProcessVideo":214,"SaveResult":227,"RunTest":8551,"UploadImages":0,"AllRunsDuration":18000},"visualComplete85":1256,"visualComplete90":1256,"visualComplete95":1256,"visualComplete99":1256,"run":3,"step":1,"effectiveBps":70935,"effectiveBpsDoc":66362,"smallImageCount":0,"bigImageCount":0,"maybeCaptcha":0};
+</script><br><a href="https://www.webpagetest.org/customWaterfall.php?test=170623_ZX_MQF&amp;run=3&amp;width=930">customize waterfall</a> • <a id="view-images" href="https://www.webpagetest.org/pageimages.php?test=170623_ZX_MQF&amp;run=3">View all Images</a>                <br>
+                <br>
+                <h3 name="connection_view">Connection View</h3>
+                    <map name="#connection_map_fv_1">
+<area href="#step1_request" alt="http://oml1111.site/" title="http://oml1111.site/" shape="RECT" coords="0,0,250,25">
+<area href="#step1_request1" alt="1: http://oml1111.site/" title="1: http://oml1111.site/" shape="RECT" coords="315,26,336,42">
+<area href="#step1_request2" alt="2: http://oml1111.site/static/style.css" title="2: http://oml1111.site/static/style.css" shape="RECT" coords="344,26,367,42">
+<area href="#step1_request4" alt="4: http://oml1111.site/static/login.js" title="4: http://oml1111.site/static/login.js" shape="RECT" coords="367,26,394,42">
+<area href="#step1_request8" alt="8: http://oml1111.site/favicon.ico" title="8: http://oml1111.site/favicon.ico" shape="RECT" coords="663,26,687,42">
+<area href="#step1_request3" alt="3: http://oml1111.site/static/utils.js" title="3: http://oml1111.site/static/utils.js" shape="RECT" coords="346,43,367,59">
+<area href="#step1_request5" alt="5: https://apis.google.com/js/platform.js?onload=onLoadCallback" title="5: https://apis.google.com/js/platform.js?onload=onLoadCallback" shape="RECT" coords="468,60,504,76">
+<area href="#step1_request7" alt="7: https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0" title="7: https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0" shape="RECT" coords="662,60,692,76">
+<area href="#step1_request6" alt="6: https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" title="6: https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" shape="RECT" coords="495,77,582,93">
+<area href="#step1_request9" alt="9: https://accounts.google.com/o/oauth2/iframe" title="9: https://accounts.google.com/o/oauth2/iframe" shape="RECT" coords="776,94,797,110">
+<area href="#step1_request11" alt="11: https://accounts.google.com/o/oauth2/iframerpc?action=checkOrigin&amp;origin=http%3A%2F%2Foml1111.site&amp;client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com" title="11: https://accounts.google.com/o/oauth2/iframerpc?action=checkOrigin&amp;origin=http%3A%2F%2Foml1111.site&amp;client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com" shape="RECT" coords="905,94,928,110">
+<area href="#step1_request10" alt="10: https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js" title="10: https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js" shape="RECT" coords="858,111,880,127">
+</map>
+<table class="legend" style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;" cellspacing="0" cellpadding="2px" bordercolor="silver" border="1">
+<tbody><tr>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#007B84"></div></td><td>DNS Lookup</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#FF7B00"></div></td><td>Initial Connection</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#CF25DF"></div></td><td>SSL Negotiation</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:2px; background-color:#28BC00"></div></td><td>Start Render</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#D888DF"></div></td><td>DOM Content Loaded</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#C0C0FF"></div></td><td>On Load</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:2px; background-color:#0000FF"></div></td><td>Document Complete</td></tr></tbody></table></td>
+
+</tr>
+</tbody></table>
+<br>
+<img class="progress" alt="Connection View waterfall diagram" usemap="#connection_map_fv_1" id="connectionView_fv_1" src="beforeindexwaterfall_files/waterfall.png">                </div>
+                <br><br>
+                <div style="width:100%; height:90; text-align:center; clear: both; padding: 1em 0px; background-color: #AAA;">
+  <script async="" src="beforeindexwaterfall_files/adsbygoogle.js"></script>
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="pub-0388499782819905" data-ad-slot="9339196816">
+  </ins>
+  <script>
+    (adsbygoogle=window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+                <br>
+                <h3 name="request_details_view">Request Details</h3>
+                <table style="width:auto; font-size:11px; margin-left:auto; margin-right:auto;" cellspacing="0" cellpadding="2px" bordercolor="silver" border="1">
+<tbody>
+<tr>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#dfffdf"></div></td><td>Before Start Render</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:#dfdfff"></div></td><td>Before On Load</td></tr></tbody></table></td>
+<td><table><tbody><tr><td><div class="bar" style="width:15px; background-color:gainsboro"></div></td><td>After On Load</td></tr></tbody></table></td>
+
+</tr>
+</tbody>
+</table>
+<br>
+<div class="center">
+<table class="tableDetails details center">
+<caption>Request Details</caption>
+<thead>
+<tr>
+<th class="reqNum header">#</th>
+<th class="reqUrl header">Resource</th>
+<th class="reqMime header">Content Type</th>
+<th class="reqStart header">Request Start</th>
+<th class="reqDNS header">DNS Lookup</th>
+<th class="reqSocket header">Initial Connection</th>
+<th class="reqSSL header">SSL Negotiation</th>
+<th class="reqTTFB header">Time to First Byte</th>
+<th class="reqDownload header">Content Download</th>
+<th class="reqBytes header">Bytes Downloaded</th>
+<th class="reqCertBytes header">Certificates</th>
+<th class="reqResult header">Error/Status Code</th>
+<th class="reqIP header">IP</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="reqNum oddRender">1</td>
+<td class="reqUrl oddRender"><a title="http://oml1111.site/" href="#step1_request1">http://oml1111.site/</a></td>
+<td class="reqMime oddRender">text/html</td>
+<td class="reqStart oddRender">0.182 s</td>
+<td class="reqDNS oddRender">129 ms</td>
+<td class="reqSocket oddRender">53 ms</td>
+<td class="reqSSL oddRender">-</td>
+<td class="reqTTFB oddRender">57 ms</td>
+<td class="reqDownload oddRender">-</td>
+<td class="reqBytes oddRender">1.1 KB</td>
+<td class="reqCertBytes oddRender">-</td>
+<td class="reqResult oddRender">200</td>
+<td class="reqIP oddRender">34.209.16.230</td>
+</tr><tr><td class="reqNum evenRender">2</td>
+<td class="reqUrl evenRender"><a title="http://oml1111.site/static/style.css" href="#step1_request2">http://oml1111.site/static/style.css</a></td>
+<td class="reqMime evenRender">text/css</td>
+<td class="reqStart evenRender">0.263 s</td>
+<td class="reqDNS evenRender">-</td>
+<td class="reqSocket evenRender">-</td>
+<td class="reqSSL evenRender">-</td>
+<td class="reqTTFB evenRender">64 ms</td>
+<td class="reqDownload evenRender">-</td>
+<td class="reqBytes evenRender">0.6 KB</td>
+<td class="reqCertBytes evenRender">-</td>
+<td class="reqResult evenRender">200</td>
+<td class="reqIP evenRender">34.209.16.230</td>
+</tr><tr><td class="reqNum oddRender">3</td>
+<td class="reqUrl oddRender"><a title="http://oml1111.site/static/utils.js" href="#step1_request3">http://oml1111.site/static/utils.js</a></td>
+<td class="reqMime oddRender">application/javascript</td>
+<td class="reqStart oddRender">0.269 s</td>
+<td class="reqDNS oddRender">-</td>
+<td class="reqSocket oddRender">53 ms</td>
+<td class="reqSSL oddRender">-</td>
+<td class="reqTTFB oddRender">59 ms</td>
+<td class="reqDownload oddRender">-</td>
+<td class="reqBytes oddRender">0.7 KB</td>
+<td class="reqCertBytes oddRender">-</td>
+<td class="reqResult oddRender">200</td>
+<td class="reqIP oddRender">34.209.16.230</td>
+</tr><tr><td class="reqNum evenRender">4</td>
+<td class="reqUrl evenRender"><a title="http://oml1111.site/static/login.js" href="#step1_request4">http://oml1111.site/static/login.js</a></td>
+<td class="reqMime evenRender">application/javascript</td>
+<td class="reqStart evenRender">0.328 s</td>
+<td class="reqDNS evenRender">-</td>
+<td class="reqSocket evenRender">-</td>
+<td class="reqSSL evenRender">-</td>
+<td class="reqTTFB evenRender">76 ms</td>
+<td class="reqDownload evenRender">-</td>
+<td class="reqBytes evenRender">1.1 KB</td>
+<td class="reqCertBytes evenRender">-</td>
+<td class="reqResult evenRender">200</td>
+<td class="reqIP evenRender">34.209.16.230</td>
+</tr><tr><td class="reqNum oddRender">5</td>
+<td class="reqUrl oddRender"><a title="https://apis.google.com/js/platform.js?onload=onLoadCallback" href="#step1_request5">https://apis.google....nload=onLoadCallback</a></td>
+<td class="reqMime oddRender">application/javascript</td>
+<td class="reqStart oddRender">0.611 s</td>
+<td class="reqDNS oddRender">51 ms</td>
+<td class="reqSocket oddRender">41 ms</td>
+<td class="reqSSL oddRender">64 ms</td>
+<td class="reqTTFB oddRender">77 ms</td>
+<td class="reqDownload oddRender">25 ms</td>
+<td class="reqBytes oddRender">16.4 KB</td>
+<td class="reqCertBytes oddRender">3161 B</td>
+<td class="reqResult oddRender">200</td>
+<td class="reqIP oddRender">216.58.195.78</td>
+</tr><tr><td class="reqNum evenRender">6</td>
+<td class="reqUrl evenRender"><a title="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" href="#step1_request6">https://ajax.googlea.../3.2.1/jquery.min.js</a></td>
+<td class="reqMime evenRender">text/javascript</td>
+<td class="reqStart evenRender">0.687 s</td>
+<td class="reqDNS evenRender">188 ms</td>
+<td class="reqSocket evenRender">107 ms</td>
+<td class="reqSSL evenRender">119 ms</td>
+<td class="reqTTFB evenRender">108 ms</td>
+<td class="reqDownload evenRender">137 ms</td>
+<td class="reqBytes evenRender">29.9 KB</td>
+<td class="reqCertBytes evenRender">3231 B</td>
+<td class="reqResult evenRender">200</td>
+<td class="reqIP evenRender">209.85.232.95</td>
+</tr><tr><td class="reqNum oddRender">7</td>
+<td class="reqUrl oddRender"><a title="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0" href="#step1_request7">https://apis.google....Dyg/cb=gapi.loaded_0</a></td>
+<td class="reqMime oddRender">text/javascript</td>
+<td class="reqStart oddRender">1.156 s</td>
+<td class="reqDNS oddRender">-</td>
+<td class="reqSocket oddRender">-</td>
+<td class="reqSSL oddRender">-</td>
+<td class="reqTTFB oddRender">40 ms</td>
+<td class="reqDownload oddRender">43 ms</td>
+<td class="reqBytes oddRender">26.1 KB</td>
+<td class="reqCertBytes oddRender">-</td>
+<td class="reqResult oddRender">200</td>
+<td class="reqIP oddRender">216.58.195.78</td>
+</tr><tr><td class="reqNum error evenRender">8</td>
+<td class="reqUrl error evenRender"><a title="http://oml1111.site/favicon.ico" href="#step1_request8">http://oml1111.site/favicon.ico</a></td>
+<td class="reqMime error evenRender">text/html</td>
+<td class="reqStart error evenRender">1.158 s</td>
+<td class="reqDNS error evenRender">-</td>
+<td class="reqSocket error evenRender">-</td>
+<td class="reqSSL error evenRender">-</td>
+<td class="reqTTFB error evenRender">67 ms</td>
+<td class="reqDownload error evenRender">-</td>
+<td class="reqBytes error evenRender">0.4 KB</td>
+<td class="reqCertBytes error evenRender">-</td>
+<td class="reqResult error evenRender">404</td>
+<td class="reqIP error evenRender">34.209.16.230</td>
+</tr><tr><td class="reqNum odd">9</td>
+<td class="reqUrl odd"><a title="https://accounts.google.com/o/oauth2/iframe" href="#step1_request9">https://accounts.goo....com/o/oauth2/iframe</a></td>
+<td class="reqMime odd">text/html</td>
+<td class="reqStart odd">1.477 s</td>
+<td class="reqDNS odd">44 ms</td>
+<td class="reqSocket odd">32 ms</td>
+<td class="reqSSL odd">61 ms</td>
+<td class="reqTTFB odd">57 ms</td>
+<td class="reqDownload odd">2 ms</td>
+<td class="reqBytes odd">0.5 KB</td>
+<td class="reqCertBytes odd">3171 B</td>
+<td class="reqResult odd">200</td>
+<td class="reqIP odd">172.217.6.45</td>
+</tr><tr><td class="reqNum even">10</td>
+<td class="reqUrl even"><a title="https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js" href="#step1_request10">https://ssl.gstatic....9868167-idpiframe.js</a></td>
+<td class="reqMime even">text/javascript</td>
+<td class="reqStart even">1.708 s</td>
+<td class="reqDNS even">58 ms</td>
+<td class="reqSocket even">32 ms</td>
+<td class="reqSSL even">63 ms</td>
+<td class="reqTTFB even">36 ms</td>
+<td class="reqDownload even">24 ms</td>
+<td class="reqBytes even">14.0 KB</td>
+<td class="reqCertBytes even">3916 B</td>
+<td class="reqResult even">200</td>
+<td class="reqIP even">216.58.194.163</td>
+</tr><tr><td class="reqNum odd">11</td>
+<td class="reqUrl odd"><a title="https://accounts.google.com/o/oauth2/iframerpc?action=checkOrigin&amp;origin=http%3A%2F%2Foml1111.site&amp;client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com" href="#step1_request11">https://accounts.goo...oogleusercontent.com</a></td>
+<td class="reqMime odd">application/json</td>
+<td class="reqStart odd">1.84 s</td>
+<td class="reqDNS odd">-</td>
+<td class="reqSocket odd">-</td>
+<td class="reqSSL odd">-</td>
+<td class="reqTTFB odd">62 ms</td>
+<td class="reqDownload odd">-</td>
+<td class="reqBytes odd">0.1 KB</td>
+<td class="reqCertBytes odd">-</td>
+<td class="reqResult odd">200</td>
+<td class="reqIP odd">172.217.6.45</td>
+</tr></tbody>
+</table>
+</div>
+
+                <br>
+                <div style="width:100%; height:90; text-align:center; clear:both; padding: 1em 0px; background-color: #AAA;">
+  <script async="" src="beforeindexwaterfall_files/adsbygoogle.js"></script>
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="pub-0388499782819905" data-ad-slot="7833437511">
+  </ins>
+  <script>
+    (adsbygoogle=window.adsbygoogle || []).push({});
+  </script>
+</div>
+                <br>
+                <p>Test Machine DNS Server(s): 172.31.0.2</p>
+<div id="headers"><br><hr><h2>Request Headers</h2><p><a id="step1_all" href="javascript:expandAll(1);">+ Expand All</a></p><div id="header_details_step1"><h4><span class="a_request" id="step1_request1" data-target-id="step1_headers_1">+ Request 1: http://oml1111.site/</span></h4><div class="header_details" id="step1_headers_1"><p class="indented2">
+<b>URL:</b> http://oml1111.site/<br>
+<b>Host:</b> oml1111.site<br>
+<b>IP:</b> 34.209.16.230<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> VeryHigh<br>
+<b>Client Port:</b> 54733<br>
+<b>Request Start:</b> 0.182 s<br>
+<b>Initial Connection:</b> 53 ms<br>
+<b>Time to First Byte:</b> 57 ms<br>
+<b>Bytes In (downloaded):</b> 1.1 KB<br>
+<b>Uncompressed Size:</b> 1.4 KB<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET / HTTP/1.1<br>
+Host: oml1111.site<br>
+Connection: keep-alive<br>
+Upgrade-Insecure-Requests: 1<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8<br>
+Accept-Encoding: gzip, deflate<br>
+Accept-Language: en-US,en;q=0.8<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Fri, 23 Jun 2017 09:10:45 GMT<br>
+Server: Apache/2.4.18 (Ubuntu)<br>
+Set-Cookie: user=; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Path=/<br>
+Set-Cookie: password_hash=; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Path=/<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 762<br>
+Keep-Alive: timeout=5, max=100<br>
+Connection: Keep-Alive<br>
+Content-Type: text/html; charset=utf-8<br>
+</p></div><h4><span class="a_request" id="step1_request2" data-target-id="step1_headers_2">+ Request 2: http://oml1111.site/static/style.css</span></h4><div class="header_details" id="step1_headers_2"><p class="indented2">
+<b>URL:</b> http://oml1111.site/static/style.css<br>
+<b>Host:</b> oml1111.site<br>
+<b>IP:</b> 34.209.16.230<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> VeryHigh<br>
+<b>Initiated By:</b> http://oml1111.site/ line 5<br>
+<b>Client Port:</b> 54733<br>
+<b>Request Start:</b> 0.263 s<br>
+<b>Time to First Byte:</b> 64 ms<br>
+<b>Bytes In (downloaded):</b> 0.6 KB<br>
+<b>Uncompressed Size:</b> 0.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /static/style.css HTTP/1.1<br>
+Host: oml1111.site<br>
+Connection: keep-alive<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+Accept: text/css,*/*;q=0.1<br>
+Referer: http://oml1111.site/<br>
+Accept-Encoding: gzip, deflate<br>
+Accept-Language: en-US,en;q=0.8<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Fri, 23 Jun 2017 09:10:45 GMT<br>
+Server: Apache/2.4.18 (Ubuntu)<br>
+Cache-Control: public, max-age=43200<br>
+Expires: Fri, 23 Jun 2017 21:10:45 GMT<br>
+ETag: "1498085413.2380822-244-241700451"<br>
+Accept-Ranges: bytes<br>
+Last-Modified: Wed, 21 Jun 2017 22:50:13 GMT<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 159<br>
+Keep-Alive: timeout=5, max=99<br>
+Connection: Keep-Alive<br>
+Content-Type: text/css; charset=utf-8<br>
+</p></div><h4><span class="a_request" id="step1_request3" data-target-id="step1_headers_3">+ Request 3: http://oml1111.site/static/utils.js</span></h4><div class="header_details" id="step1_headers_3"><p class="indented2">
+<b>URL:</b> http://oml1111.site/static/utils.js<br>
+<b>Host:</b> oml1111.site<br>
+<b>IP:</b> 34.209.16.230<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> High<br>
+<b>Initiated By:</b> http://oml1111.site/ line 9<br>
+<b>Client Port:</b> 54734<br>
+<b>Request Start:</b> 0.269 s<br>
+<b>Initial Connection:</b> 53 ms<br>
+<b>Time to First Byte:</b> 59 ms<br>
+<b>Bytes In (downloaded):</b> 0.7 KB<br>
+<b>Uncompressed Size:</b> 0.4 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /static/utils.js HTTP/1.1<br>
+Host: oml1111.site<br>
+Connection: keep-alive<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+Accept: */*<br>
+Referer: http://oml1111.site/<br>
+Accept-Encoding: gzip, deflate<br>
+Accept-Language: en-US,en;q=0.8<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Fri, 23 Jun 2017 09:10:45 GMT<br>
+Server: Apache/2.4.18 (Ubuntu)<br>
+Cache-Control: public, max-age=43200<br>
+Expires: Fri, 23 Jun 2017 21:10:45 GMT<br>
+ETag: "1498150235.6438336-377-4293660151"<br>
+Accept-Ranges: bytes<br>
+Last-Modified: Thu, 22 Jun 2017 16:50:35 GMT<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 262<br>
+Keep-Alive: timeout=5, max=100<br>
+Connection: Keep-Alive<br>
+Content-Type: application/javascript<br>
+</p></div><h4><span class="a_request" id="step1_request4" data-target-id="step1_headers_4">+ Request 4: http://oml1111.site/static/login.js</span></h4><div class="header_details" id="step1_headers_4"><p class="indented2">
+<b>URL:</b> http://oml1111.site/static/login.js<br>
+<b>Host:</b> oml1111.site<br>
+<b>IP:</b> 34.209.16.230<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> High<br>
+<b>Initiated By:</b> http://oml1111.site/ line 18<br>
+<b>Client Port:</b> 54733<br>
+<b>Request Start:</b> 0.328 s<br>
+<b>Time to First Byte:</b> 76 ms<br>
+<b>Bytes In (downloaded):</b> 1.1 KB<br>
+<b>Uncompressed Size:</b> 1.4 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /static/login.js HTTP/1.1<br>
+Host: oml1111.site<br>
+Connection: keep-alive<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+Accept: */*<br>
+Referer: http://oml1111.site/<br>
+Accept-Encoding: gzip, deflate<br>
+Accept-Language: en-US,en;q=0.8<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 200 OK<br>
+Date: Fri, 23 Jun 2017 09:10:45 GMT<br>
+Server: Apache/2.4.18 (Ubuntu)<br>
+Cache-Control: public, max-age=43200<br>
+Expires: Fri, 23 Jun 2017 21:10:45 GMT<br>
+ETag: "1498137361.95417-1475-4283567583"<br>
+Accept-Ranges: bytes<br>
+Last-Modified: Thu, 22 Jun 2017 13:16:01 GMT<br>
+Vary: Accept-Encoding<br>
+Content-Encoding: gzip<br>
+Content-Length: 716<br>
+Keep-Alive: timeout=5, max=98<br>
+Connection: Keep-Alive<br>
+Content-Type: application/javascript<br>
+</p></div><h4><span class="a_request" id="step1_request5" data-target-id="step1_headers_5">+ Request 5: https://apis.google.com/js/platform.js?onload=onLoadCallback</span></h4><div class="header_details" id="step1_headers_5"><p class="indented2">
+<b>URL:</b> https://apis.google.com/js/platform.js?onload=onLoadCallback<br>
+<b>Host:</b> apis.google.com<br>
+<b>IP:</b> 216.58.195.78<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> Low<br>
+<b>Protocol: </b>HTTP/2<br>
+<b>HTTP/2 Stream: </b>1, weight 147, depends on 0, EXCLUSIVE<br><b>Initiated By:</b> http://oml1111.site/ line 16<br>
+<b>Client Port:</b> 54737<br>
+<b>Request Start:</b> 0.611 s<br>
+<b>DNS Lookup:</b> 51 ms<br>
+<b>Initial Connection:</b> 41 ms<br>
+<b>Time to First Byte:</b> 77 ms<br>
+<b>Content Download:</b> 25 ms<br>
+<b>Bytes In (downloaded):</b> 16.4 KB<br>
+<b>Uncompressed Size:</b> 40.5 KB<br>
+<b>Certificates (downloaded):</b> 3,161 B<br>
+<b>Bytes Out (uploaded):</b> 0.2 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+:method: GET<br>
+:authority: apis.google.com<br>
+:scheme: https<br>
+:path: /js/platform.js?onload=onLoadCallback<br>
+user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+accept: */*<br>
+referer: http://oml1111.site/<br>
+accept-encoding: gzip, deflate, br<br>
+accept-language: en-US,en;q=0.8<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+:status: 200<br>
+content-type: application/javascript; charset=utf-8<br>
+content-security-policy: script-src 'unsafe-inline' 'unsafe-eval' 'self'
+ https://*.gstatic.com https://www.google-analytics.com 
+https://pagead2.googleadservices.com 
+https://pagead2.googlesyndication.com https://tpc.googlesyndication.com 
+https://s.ytimg.com https://www.youtube.com;report-uri 
+/_/cspreport/es_oz_20170621.10_p0<br>
+x-ua-compatible: IE=edge, chrome=1<br>
+timing-allow-origin: *<br>
+etag: "8fdaac48d9e076a7d04e308d5747f81a"<br>
+expires: Fri, 23 Jun 2017 09:10:45 GMT<br>
+date: Fri, 23 Jun 2017 09:10:45 GMT<br>
+cache-control: private, max-age=1800, stale-while-revalidate=1800<br>
+strict-transport-security: max-age=10886400<br>
+p3p: CP="This is not a P3P policy! See https://support.google.com/accounts/answer/151657?hl=en for more info."<br>
+content-encoding: gzip<br>
+server: ESF<br>
+x-xss-protection: 1; mode=block<br>
+x-frame-options: SAMEORIGIN<br>
+x-content-type-options: nosniff<br>
+set-cookie: 
+NID=106=LtTbOGKYuusLHpl0mlS2hCuzEnqPIq4DguAHwm-GnxW--G_BIBffWxhd6Ae03zpMFWneLgNTPoLjYUyZMkbY1MPcjd9ee2y2P1JHXoAzyJf8Zduh6iyV4i-UaBOwRzky;Domain=.google.com;Path=/;Expires=Sat,
+ 23-Dec-2017 09:10:45 GMT;HttpOnly<br>
+alt-svc: quic=":443"; ma=2592000; v="39,38,37,36,35"<br>
+</p></div><h4><span class="a_request" id="step1_request6" data-target-id="step1_headers_6">+ Request 6: https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</span></h4><div class="header_details" id="step1_headers_6"><p class="indented2">
+<b>URL:</b> https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js<br>
+<b>Host:</b> ajax.googleapis.com<br>
+<b>IP:</b> 209.85.232.95<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> High<br>
+<b>Protocol: </b>HTTP/2<br>
+<b>HTTP/2 Stream: </b>1, weight 220, depends on 0, EXCLUSIVE<br><b>Initiated By:</b> http://oml1111.site/ line 8<br>
+<b>Client Port:</b> 54736<br>
+<b>Request Start:</b> 0.687 s<br>
+<b>DNS Lookup:</b> 188 ms<br>
+<b>Initial Connection:</b> 107 ms<br>
+<b>Time to First Byte:</b> 108 ms<br>
+<b>Content Download:</b> 137 ms<br>
+<b>Bytes In (downloaded):</b> 29.9 KB<br>
+<b>Uncompressed Size:</b> 84.6 KB<br>
+<b>Certificates (downloaded):</b> 3,231 B<br>
+<b>Bytes Out (uploaded):</b> 0.2 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+:method: GET<br>
+:authority: ajax.googleapis.com<br>
+:scheme: https<br>
+:path: /ajax/libs/jquery/3.2.1/jquery.min.js<br>
+user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+accept: */*<br>
+referer: http://oml1111.site/<br>
+accept-encoding: gzip, deflate, br<br>
+accept-language: en-US,en;q=0.8<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+:status: 200<br>
+accept-ranges: bytes<br>
+vary: Accept-Encoding<br>
+content-encoding: gzip<br>
+content-type: text/javascript; charset=UTF-8<br>
+access-control-allow-origin: *<br>
+timing-allow-origin: *<br>
+content-length: 30306<br>
+date: Thu, 15 Jun 2017 16:37:01 GMT<br>
+expires: Fri, 15 Jun 2018 16:37:01 GMT<br>
+last-modified: Fri, 24 Mar 2017 20:55:54 GMT<br>
+x-content-type-options: nosniff<br>
+server: sffe<br>
+x-xss-protection: 1; mode=block<br>
+cache-control: public, max-age=31536000, stale-while-revalidate=2592000<br>
+age: 664424<br>
+alt-svc: quic=":443"; ma=2592000; v="38,37,36,35"<br>
+</p></div><h4><span class="a_request" id="step1_request7" data-target-id="step1_headers_7">+
+ Request 7: 
+https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0</span></h4><div class="header_details" id="step1_headers_7"><p class="indented2">
+<b>URL:</b> 
+https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0<br>
+<b>Host:</b> apis.google.com<br>
+<b>IP:</b> 216.58.195.78<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> Low<br>
+<b>Protocol: </b>HTTP/2<br>
+<b>HTTP/2 Stream: </b>3, weight 147, depends on 0, EXCLUSIVE<br><b>Initiated By:</b> https://apis.google.com/js/platform.js?onload=onLoadCallback line 13 column 386<br>
+<b>Client Port:</b> 54737<br>
+<b>Request Start:</b> 1.156 s<br>
+<b>Time to First Byte:</b> 40 ms<br>
+<b>Content Download:</b> 43 ms<br>
+<b>Bytes In (downloaded):</b> 26.1 KB<br>
+<b>Uncompressed Size:</b> 77.0 KB<br>
+<b>Bytes Out (uploaded):</b> 0.2 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+:method: GET<br>
+:authority: apis.google.com<br>
+:scheme: https<br>
+:path: 
+/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0<br>
+user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+accept: */*<br>
+referer: http://oml1111.site/<br>
+accept-encoding: gzip, deflate, br<br>
+accept-language: en-US,en;q=0.8<br>
+cookie: 
+NID=106=LtTbOGKYuusLHpl0mlS2hCuzEnqPIq4DguAHwm-GnxW--G_BIBffWxhd6Ae03zpMFWneLgNTPoLjYUyZMkbY1MPcjd9ee2y2P1JHXoAzyJf8Zduh6iyV4i-UaBOwRzky<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+:status: 200<br>
+accept-ranges: bytes<br>
+vary: Accept-Encoding<br>
+content-encoding: gzip<br>
+content-type: text/javascript; charset=UTF-8<br>
+content-length: 26532<br>
+date: Thu, 22 Jun 2017 19:11:18 GMT<br>
+expires: Fri, 22 Jun 2018 19:11:18 GMT<br>
+last-modified: Wed, 21 Jun 2017 20:49:45 GMT<br>
+x-content-type-options: nosniff<br>
+server: sffe<br>
+x-xss-protection: 1; mode=block<br>
+cache-control: public, immutable, max-age=31536000<br>
+age: 50368<br>
+alt-svc: quic=":443"; ma=2592000; v="39,38,37,36,35"<br>
+</p></div><h4><span class="a_request" id="step1_request8" data-target-id="step1_headers_8">+ Request 8: http://oml1111.site/favicon.ico</span></h4><div class="header_details" id="step1_headers_8"><p class="indented2">
+<b>URL:</b> http://oml1111.site/favicon.ico<br>
+<b>Host:</b> oml1111.site<br>
+<b>IP:</b> 34.209.16.230<br>
+<b>Error/Status Code:</b> 404<br>
+<b>Priority:</b> High<br>
+<b>Client Port:</b> 54733<br>
+<b>Request Start:</b> 1.158 s<br>
+<b>Time to First Byte:</b> 67 ms<br>
+<b>Bytes In (downloaded):</b> 0.4 KB<br>
+<b>Uncompressed Size:</b> 0.2 KB<br>
+<b>Bytes Out (uploaded):</b> 0.3 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+GET /favicon.ico HTTP/1.1<br>
+Host: oml1111.site<br>
+Connection: keep-alive<br>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+Accept: image/webp,image/apng,image/*,*/*;q=0.8<br>
+Referer: http://oml1111.site/<br>
+Accept-Encoding: gzip, deflate<br>
+Accept-Language: en-US,en;q=0.8<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+HTTP/1.1 404 NOT FOUND<br>
+Date: Fri, 23 Jun 2017 09:10:46 GMT<br>
+Server: Apache/2.4.18 (Ubuntu)<br>
+Content-Length: 233<br>
+Keep-Alive: timeout=5, max=97<br>
+Connection: Keep-Alive<br>
+Content-Type: text/html<br>
+</p></div><h4><span class="a_request" id="step1_request9" data-target-id="step1_headers_9">+ Request 9: https://accounts.google.com/o/oauth2/iframe</span></h4><div class="header_details" id="step1_headers_9"><p class="indented2">
+<b>URL:</b> https://accounts.google.com/o/oauth2/iframe<br>
+<b>Host:</b> accounts.google.com<br>
+<b>IP:</b> 172.217.6.45<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> VeryHigh<br>
+<b>Protocol: </b>HTTP/2<br>
+<b>HTTP/2 Stream: </b>1, weight 256, depends on 0, EXCLUSIVE<br><b>Initiated By:</b>
+ 
+https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.wAjVcoJfy54.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCM6AYLookWtWddlDPLEXL7UB-UDyg/cb=gapi.loaded_0
+ line 126 column 95<br>
+<b>Client Port:</b> 54740<br>
+<b>Request Start:</b> 1.477 s<br>
+<b>DNS Lookup:</b> 44 ms<br>
+<b>Initial Connection:</b> 32 ms<br>
+<b>Time to First Byte:</b> 57 ms<br>
+<b>Content Download:</b> 2 ms<br>
+<b>Bytes In (downloaded):</b> 0.5 KB<br>
+<b>Uncompressed Size:</b> 0.4 KB<br>
+<b>Certificates (downloaded):</b> 3,171 B<br>
+<b>Bytes Out (uploaded):</b> 0.4 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+:method: GET<br>
+:authority: accounts.google.com<br>
+:scheme: https<br>
+:path: /o/oauth2/iframe<br>
+upgrade-insecure-requests: 1<br>
+user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8<br>
+referer: http://oml1111.site/<br>
+accept-encoding: gzip, deflate, br<br>
+accept-language: en-US,en;q=0.8<br>
+cookie: 
+NID=106=LtTbOGKYuusLHpl0mlS2hCuzEnqPIq4DguAHwm-GnxW--G_BIBffWxhd6Ae03zpMFWneLgNTPoLjYUyZMkbY1MPcjd9ee2y2P1JHXoAzyJf8Zduh6iyV4i-UaBOwRzky<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+:status: 200<br>
+content-type: text/html; charset=utf-8<br>
+expires: Sat, 24 Jun 2017 09:10:46 GMT<br>
+date: Fri, 23 Jun 2017 09:10:46 GMT<br>
+cache-control: public, max-age=86400<br>
+content-encoding: gzip<br>
+server: ESF<br>
+x-xss-protection: 1; mode=block<br>
+alt-svc: quic=":443"; ma=2592000; v="39,38,37,36,35"<br>
+</p></div><h4><span class="a_request" id="step1_request10" data-target-id="step1_headers_10">+ Request 10: https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js</span></h4><div class="header_details" id="step1_headers_10"><p class="indented2">
+<b>URL:</b> https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js<br>
+<b>Host:</b> ssl.gstatic.com<br>
+<b>IP:</b> 216.58.194.163<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> High<br>
+<b>Protocol: </b>HTTP/2<br>
+<b>HTTP/2 Stream: </b>1, weight 220, depends on 0, EXCLUSIVE<br><b>Initiated By:</b> https://accounts.google.com/o/oauth2/iframe<br>
+<b>Client Port:</b> 54741<br>
+<b>Request Start:</b> 1.708 s<br>
+<b>DNS Lookup:</b> 58 ms<br>
+<b>Initial Connection:</b> 32 ms<br>
+<b>Time to First Byte:</b> 36 ms<br>
+<b>Content Download:</b> 24 ms<br>
+<b>Bytes In (downloaded):</b> 14.0 KB<br>
+<b>Uncompressed Size:</b> 44.3 KB<br>
+<b>Certificates (downloaded):</b> 3,916 B<br>
+<b>Bytes Out (uploaded):</b> 0.2 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+:method: GET<br>
+:authority: ssl.gstatic.com<br>
+:scheme: https<br>
+:path: /accounts/o/4009868167-idpiframe.js<br>
+user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+accept: */*<br>
+referer: https://accounts.google.com/o/oauth2/iframe<br>
+accept-encoding: gzip, deflate, br<br>
+accept-language: en-US,en;q=0.8<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+:status: 200<br>
+accept-ranges: bytes<br>
+vary: Accept-Encoding<br>
+content-encoding: gzip<br>
+content-type: text/javascript<br>
+content-length: 14097<br>
+date: Thu, 22 Jun 2017 00:09:46 GMT<br>
+expires: Fri, 22 Jun 2018 00:09:46 GMT<br>
+last-modified: Wed, 21 Jun 2017 10:27:27 GMT<br>
+x-content-type-options: nosniff<br>
+server: sffe<br>
+x-xss-protection: 1; mode=block<br>
+cache-control: public, max-age=31536000<br>
+age: 118860<br>
+alt-svc: quic=":443"; ma=2592000; v="39,38,37,36,35"<br>
+</p></div><h4><span class="a_request" id="step1_request11" data-target-id="step1_headers_11">+
+ Request 11: 
+https://accounts.google.com/o/oauth2/iframerpc?action=checkOrigin&amp;origin=http%3A%2F%2Foml1111.site&amp;client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com</span></h4><div class="header_details" id="step1_headers_11"><p class="indented2">
+<b>URL:</b> 
+https://accounts.google.com/o/oauth2/iframerpc?action=checkOrigin&amp;origin=http%3A%2F%2Foml1111.site&amp;client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com<br>
+<b>Host:</b> accounts.google.com<br>
+<b>IP:</b> 172.217.6.45<br>
+<b>Error/Status Code:</b> 200<br>
+<b>Priority:</b> High<br>
+<b>Protocol: </b>HTTP/2<br>
+<b>HTTP/2 Stream: </b>3, weight 220, depends on 0, EXCLUSIVE<br><b>Initiated By:</b> https://ssl.gstatic.com/accounts/o/4009868167-idpiframe.js line 41 column 235<br>
+<b>Client Port:</b> 54740<br>
+<b>Request Start:</b> 1.840 s<br>
+<b>Time to First Byte:</b> 62 ms<br>
+<b>Bytes In (downloaded):</b> 0.1 KB<br>
+<b>Uncompressed Size:</b> 0.0 KB<br>
+<b>Bytes Out (uploaded):</b> 0.2 KB<br>
+</p><p class="indented1"><b>Request Headers:</b></p><p class="indented2">
+:method: GET<br>
+:authority: accounts.google.com<br>
+:scheme: https<br>
+:path: 
+/o/oauth2/iframerpc?action=checkOrigin&amp;origin=http%3A%2F%2Foml1111.site&amp;client_id=662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com<br>
+user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36 PTST/384<br>
+accept: */*<br>
+referer: https://accounts.google.com/o/oauth2/iframe<br>
+accept-encoding: gzip, deflate, br<br>
+accept-language: en-US,en;q=0.8<br>
+cookie: 
+NID=106=LtTbOGKYuusLHpl0mlS2hCuzEnqPIq4DguAHwm-GnxW--G_BIBffWxhd6Ae03zpMFWneLgNTPoLjYUyZMkbY1MPcjd9ee2y2P1JHXoAzyJf8Zduh6iyV4i-UaBOwRzky<br>
+</p><p class="indented1"><b>Response Headers:</b></p><p class="indented2">
+:status: 200<br>
+content-type: application/json; charset=utf-8<br>
+expires: Fri, 23 Jun 2017 10:10:47 GMT<br>
+date: Fri, 23 Jun 2017 09:10:47 GMT<br>
+cache-control: public, max-age=3600<br>
+content-language: en-US<br>
+content-encoding: gzip<br>
+server: ESF<br>
+x-xss-protection: 1; mode=block<br>
+alt-svc: quic=":443"; ma=2592000; v="39,38,37,36,35"<br>
+</p></div></div></div>            </div>
+
+                        <div style="width:100%;float:none;clear:both;"></div>
+
+            </div></div>            </div>
+        </div>
+    </div>
+</div>
+
+   
+    <table id="feeds"><tbody><tr><th>Recent Industry Blog Posts</th><th>Recent Discussions</th></tr><tr><td><ul><li><a title="Rigor" href="http://rigor.com/blog/2017/06/introducing-free-api-tester">Introducing Rigor’s FREE API Tester</a></li><li><a title="SpeedCurve" href="https://speedcurve.com/blog/find-and-fix-what-matters-most">Find and fix what matters most</a></li><li><a title="Wikimedia Foundation" href="https://phabricator.wikimedia.org/phame/live/7/post/55/the_journey_to_thumbor_part_1_rationale/">The journey to Thumbor, part 1: rationale</a></li><li><a title="CDN Planet" href="https://www.cdnplanet.com/blog/cdn-market-news-announcements-may-2017/">CDN market news and announcements in May 2017</a></li><li><a title="Rigor" href="http://rigor.com/blog/2017/06/make-rigor-five-features">Make the Most of Rigor with These Five Features</a></li><li id="show_more_feeds_1"><a href="javascript:void(o)" onclick="showFeeds(1)">more...</a></li><li class="morefeeds"><div id="more_feeds_1" class="hidden"><ul><li><a title="Wikimedia Foundation" href="https://phabricator.wikimedia.org/phame/live/7/post/54/looking_back_improvements_to_edit_save_time/">Looking back: improvements to edit save time</a></li><li><a title="Goivvy.com" href="https://www.goivvy.com/blog/remove-renderblocking-javascript-abovethefold-content-magento/">How to eliminate render-blocking Javascript in above-the-fold content in Magento</a></li><li><a title="Rigor" href="http://rigor.com/blog/2017/06/website-design-meeting-demands-customers">Is Your Website Design Meeting the Demands of Your Customers?</a></li><li><a title="Wikimedia Foundation" href="https://phabricator.wikimedia.org/phame/live/7/post/19/improving_time-to-logo_performance_with_preload_links/">Improving time-to-logo performance with preload links</a></li><li><a title="Wikimedia Foundation" href="https://phabricator.wikimedia.org/phame/live/7/post/15/investigating_a_performance_improvement/">Investigating a performance improvement</a></li><li><a title="Rigor" href="http://rigor.com/blog/2017/06/the-future-of-apis">The Future of APIs</a></li><li><a title="Rigor" href="http://rigor.com/blog/2017/06/api-performance-matters">Why API Performance Matters</a></li><li><a title="Medianova" href="https://blog.medianova.com/2017/05/30/medianova-launches-new-pop-in-romania/">Medianova Launched new POP in Romania</a></li><li><a title="Rigor" href="http://rigor.com/blog/2017/05/handle-high-traffic-volume-holiday-sales">How to Handle High Traffic Volume During Holiday Sales</a></li><li><a title="Rigor" href="http://rigor.com/blog/2017/05/great-ux-can-prevent-shopping-cart-abandonment">How a Great UX can Prevent Shopping Cart Abandonment</a></li></ul></div></li></ul></td><td><ul><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14949">Your video will be available shortly. Please wait...</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14948">Slow load after settng up CloudFlare</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14947">Help needed, advice on TFB errors</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14946">Help with --shaper netem and --rndis</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14945">Scripting: if/else/endif not working</a></li><li id="show_more_feeds_2"><a href="javascript:void(o)" onclick="showFeeds(2)">more...</a></li><li class="morefeeds"><div id="more_feeds_2" class="hidden"><ul><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14942">Joomla- Mysql Webserver First Byte Time taking too long</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14941">SetCookie is not work</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14937">Slave instance to use elastic IP</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14936">0-RTT detection</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14935">Best EC2 istance to approximate average user PC?</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14934">TTFB issue</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14933">How do I apply updates not yet compiled?</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14932">Need some advice on my site.</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14931">WPT seems to always trigger lazyload?</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14930">HTTP2 PUSH media queries not working</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14929">Start Render getting triggered early by Chrome message?</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14928">How can I implement the system reload of a tester?</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14927">xrecord EXIT code null signal SIGSEGV</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14926">Private ec2 Instance | stale test</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14925">Chrome vs iOS 9 performance over Slow 3G connection</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14924">Not sure if this is a nginx problem, but...</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14923">Why might 1st byte be much slower on second run?</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14922">Click event not triggered on checkbox</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14921">Test History</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14920">Uncompressed Bytes metrics</a></li><li><a title="WebPagetest Forums" href="https://www.webpagetest.org/forums/showthread.php?tid=14919">Batch Commands in Private Instance</a></li></ul></div></li></ul></td></tr></tbody></table>
+    <div id="sponsor_header">WebPagetest Partners</div><div id="links"><table class="links"><tbody><tr><td><a href="http://www.supermonitoring.com/?utm_source=webpagetest&amp;utm_medium=banner&amp;utm_campaign=whosmonitoring" rel="nofollow" title="Super Monitoring - website monitoring powered by superheroes"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors1.png?v=14); background-position: 0px -240px;"></div></a></td><td><a href="http://www.catchpoint.com/products/synthetic.html" title="Catchpoint Systems"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors2.png?v=12); background-position: 0px -360px;"></div></a></td><td><a href="https://www.nccgroup.trust/web-performance/" title="NCC Group - Website Performance"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors1.png?v=14); background-position: 0px 0px;"></div></a></td><td><a href="http://www.naver.com/" title="NAVER"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors3.png?v=5); background-position: 0px -400px;"></div></a></td><td><a href="http://www.date2020.com/" title="Date2020.com℠ - Date as clearly as you see!℠"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors6.png?v=11); background-position: 0px -280px;"></div></a></td></tr></tbody></table><table class="links"><tbody><tr><td><a href="http://www.nyi.net/" title="www.nyi.net"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors5.png?v=14); background-position: 0px 0px;"></div></a></td><td><a href="http://www.iispeed.com/" title="Google PageSpeed optimization for Microsoft IIS"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors4.png?v=14); background-position: 0px -240px;"></div></a></td><td><a href="http://newrelic.com/" title="New Relic"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors2.png?v=12); background-position: 0px -160px;"></div></a></td><td><a href="http://www.akamai.com/" title="Akamai"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors3.png?v=5); background-position: 0px -80px;"></div></a></td><td><a href="https://www.zenedge.com/" title="ZENEDGE - Making Cybersecurity Smarter"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors1.png?v=14); background-position: 0px -200px;"></div></a></td></tr></tbody></table><table class="links"><tbody><tr><td><a href="http://www.fastly.com/" title="Fastly - The Next Gen CDN."><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors2.png?v=12); background-position: 0px 0px;"></div></a></td><td><a href="https://www.quantil.com/about-us/#about-us-2" title="QUANTIL - Global Content Delivery Network"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors6.png?v=11); background-position: 0px -120px;"></div></a></td><td><a href="http://www.crazydomains.com/" title="Web Hosting Services"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors3.png?v=5); background-position: 0px -40px;"></div></a></td><td><a href="http://www.ecritel.cn/" title="Ecritel China"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors6.png?v=11); background-position: 0px -80px;"></div></a></td><td><a href="http://www.maxcdn.com/" title="MaxCDN Content Delivery Network"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors3.png?v=5); background-position: 0px 0px;"></div></a></td></tr></tbody></table><table class="links"><tbody><tr><td><a href="https://www.dynatrace.com/?utm_source=webpagetest&amp;utm_medium=cpm&amp;utm_campaign=wptlogo&amp;utm_term=180x40&amp;utm_content=ww" title="Digital &amp; Application Performance Management | Dynatrace"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors6.png?v=11); background-position: 0px -240px;"></div></a></td><td><a href="http://www.softwarehosting.cz/" title="SoftwareHosting.cz"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors5.png?v=14); background-position: 0px -160px;"></div></a></td><td><a href="http://www.serversaustralia.com.au/" title="Dedicated Servers, VPS, Web Hosting | Servers Australia"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors2.png?v=12); background-position: 0px -400px;"></div></a></td><td><a href="http://www.trustiv.co.uk/" title="Trust IV - IT testing and project services"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors4.png?v=14); background-position: 0px -360px;"></div></a></td><td><a href="https://www.dotcom-tools.com/website-speed-test.aspx?se=574612167f2948219c65b6ca3120f44f" title="Website Performance Testing by Dotcom-Monitor"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors3.png?v=5); background-position: 0px -200px;"></div></a></td></tr></tbody></table><table class="links"><tbody><tr><td><a href="http://en.chinacache.com/" title="China Cache"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors1.png?v=14); background-position: 0px -40px;"></div></a></td><td><a href="https://www.appdynamics.com/" title="AppDynamics"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors5.png?v=14); background-position: 0px -400px;"></div></a></td><td><a href="https://www.fasterize.com/en/go-beyond-webpagetest/" title="Improve your webperf - Fasterize"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors1.png?v=14); background-position: 0px -320px;"></div></a></td><td><a href="http://www.mauritiustelecom.com/" title="Mauritius Telecom"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors6.png?v=11); background-position: 0px -200px;"></div></a></td><td><a href="http://www.vmhosts.co.uk/" title="VMHosts - Business Cloud Hosting"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors4.png?v=14); background-position: 0px -320px;"></div></a></td></tr></tbody></table><table class="links"><tbody><tr><td><a href="http://www.openspeedmonitor.com/" title="OpenSpeedMonitor by iteratec"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors1.png?v=14); background-position: 0px -360px;"></div></a></td><td><a href="http://key-performance.eu/" title="Key Performance"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors24.png?v=7); background-position: 0px -120px;"></div></a></td><td><a href="http://bit.ly/1R3ZYmB" title="Create your stunning website on WordPress.com"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors6.png?v=11); background-position: 0px -360px;"></div></a></td><td><a href="https://www.medianova.com/en" title="Medianova - CDN,Content Delivery Network,Live Streaming,CDN Hosting"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors1.png?v=14); background-position: 0px -280px;"></div></a></td><td><a href="http://www.cisin.com/" title="CIS :: One-Stop Outsourcing Services, Since 2003! | We do IT better"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors24.png?v=7); background-position: 0px -400px;"></div></a></td></tr></tbody></table><table class="links"><tbody><tr><td><a href="http://www.godaddy.com/?isc=wptlogo1&amp;utm_campaign=webpagetest&amp;utm_source=webpagetest&amp;utm_medium=Other%2BOnline&amp;utm_content=wptlogo1" title="World's #1 ICANN-accredited domain registrar | GoDaddy​"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors4.png?v=14); background-position: 0px -80px;"></div></a></td><td></td><td><a href="http://www.duplika.com/?utm_source=webpagetest&amp;utm_medium=logo&amp;utm_campaign=speed" title="duplika Internet Solutions"><div class="sponsor_logo" style="background-image: url(/images/sponsors/sponsors2.png?v=12); background-position: 0px -200px;"></div></a></td></tr></tbody></table></div>    <div class="cleared"></div>
+    
+    <script type="text/javascript" src="beforeindexwaterfall_files/site.js"></script>
+    <script type="text/javascript">
+        function showFeeds(column)
+        {
+            var label = document.getElementById("show_more_feeds_" + column);
+            label.parentNode.removeChild( label );
+            
+            document.getElementById("more_feeds_" + column).className = "";
+            return false;
+        }
+    </script>
+    <script src="beforeindexwaterfall_files/fastly.js" async=""></script>
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5b0327a758","applicationID":"2035125","transactionName":"NFBXZUNRW0ADAkRbCQ0aYENYH1FWFgBZXhVNRV1B","queueTime":0,"applicationTime":9,"atts":"GBdUEwtLSE4=","errorBeacon":"bam.nr-data.net","agent":""}</script>    
+    <div id="experiment-timing" style="color: #77A;"></div>        </div>
+        <a href="#top" id="back_to_top">Back to top</a>
+
+                <script type="text/javascript">
+        function expandRequest(targetNode) {
+          if (targetNode.length) {
+            var div_to_expand = $('#' + targetNode.attr('data-target-id'));
+
+            if (div_to_expand.is(":visible")) {
+                div_to_expand.hide();
+                targetNode.html('+' + targetNode.html().substring(1));
+            } else {
+                div_to_expand.show();
+                targetNode.html('-' + targetNode.html().substring(1));
+            }
+          }
+        }
+
+        function initDetailsTable(targetNode) {
+             $(targetNode).find(".tableDetails").tablesorter({
+                headers: { 3: { sorter:'currency' } ,
+                    4: { sorter:'currency' } ,
+                    5: { sorter:'currency' } ,
+                    6: { sorter:'currency' } ,
+                    7: { sorter:'currency' } ,
+                    8: { sorter:'currency' } ,
+                    9: { sorter:'currency' }
+                }
+            });
+        }
+
+        function initHeaderRequestExpander(targetNode) {
+            $(targetNode).find('.a_request').click(function () {
+                expandRequest($(this));
+            });
+        }
+
+        function expandAll(step) {
+          var expandAllNode = $("#step" + step + "_all");
+          var expandText = expandAllNode.html();
+          var doShow = expandText.substring(0, 1) == "+";
+          expandAllNode.html(doShow ? "- Collapse All" : "+ Expand All");
+          $("#header_details_step" + step + " .header_details").each(function(index) {
+            $(this).toggle(doShow);
+          });
+        }
+
+        function scrollTo(node) {
+            $('html, body').animate({scrollTop: node.offset().top + 'px'}, 'fast');
+        }
+
+        function handleRequestHash() {
+            var stepNum = -1;
+            var doExpandAll = false;
+            if (window.location.hash.startsWith("#step")) {
+                var parts = window.location.hash.split("_");
+                stepNum = parts[0].substring("#step".length);
+                doExpandAll = parts[1] == "all";
+            } else if (window.location.hash == '#all') {
+                stepNum = 1;
+                doExpandAll = true;
+            }
+            if (stepNum <= 0) {
+                return;
+            }
+            var expand = function() {
+                var scrollToNode = $(window.location.hash);
+                if (doExpandAll) {
+                    scrollToNode = $("#step" + stepNum + "_all");
+                    expandAll(stepNum);
+                } else {
+                    expandRequest(scrollToNode);
+                }
+                scrollTo(scrollToNode);
+            };
+            var slide_opener = $("#request_headers_step" + stepNum);
+            if (slide_opener.length) {
+              accordionHandler.toggleAccordion(slide_opener, true, expand);
+            } else {
+                expand();
+            }
+        }
+
+        function handleHash() {
+            var hash = window.location.hash;
+            if (!hash) {
+                var defaultAccordion = $("#waterfall_view_step1");
+                if (defaultAccordion.length) {
+                  accordionHandler.toggleAccordion(defaultAccordion);
+                }
+                return;
+            }
+            if (hash.startsWith("#waterfall_view_step") ||
+                hash.startsWith("#connection_view_step") ||
+                hash.startsWith("#request_details_step") ||
+                hash.startsWith("#request_headers_step")) {
+              accordionHandler.handleHash();
+            }
+            handleRequestHash();
+        }
+
+
+
+        // init existing snippets
+        $(document).ready(function() {
+            initDetailsTable($(document));
+            initHeaderRequestExpander($(document));
+                        handleHash();
+        });
+        window.onhashchange = handleHash;
+
+        var wptRequestDialogInited = {};
+
+function InitRequestDialog(step) {
+    var stepLabel = "step" + step;
+    if (wptRequestDialogInited[stepLabel] === true) {
+        return;
+    }
+
+    var CloseRequestDialog = function(hash) {
+        hash.w.hide();
+        for (i=1;i<=wptRequestCount[stepLabel];i++) {
+            $("#request-overlay-" + stepLabel + "-" + i).removeClass("selected");
+            $("#request-overlay-" + stepLabel + "-" + i).addClass("transparent");
+        }
+        $('#radio1-' + stepLabel).attr('checked', 'checked');
+        $("#request-dialog-radio-" + stepLabel).buttonset('refresh');
+        $("#dialog-contents-" + stepLabel + " div.dialog-tab-content").hide();
+        $("#request-details-" + stepLabel).show();
+    }
+
+    // initialize the pop-up dialog
+    $('#request-dialog-' + stepLabel).jqm({overlay: 0, onHide: CloseRequestDialog})
+          .jqDrag('.jqDrag');
+    $('input.jqmdX')
+        .hover( function(){ $(this).addClass('jqmdXFocus'); },
+                function(){ $(this).removeClass('jqmdXFocus'); })
+        .focus( function(){ this.hideFocus=true; $(this).addClass('jqmdXFocus'); })
+        .blur( function(){ $(this).removeClass('jqmdXFocus'); });
+
+    $("#request-dialog-radio-" + stepLabel).buttonset();
+    $("#request-dialog-radio-" + stepLabel).change(function() {
+        var panel=$('#request-dialog-radio-' + stepLabel + ' input[type=radio]:checked').val();
+        $("#dialog-contents-" + stepLabel + " div.dialog-tab-content").hide();
+        $("#" + panel).show();
+    });
+    wptRequestDialogInited[stepLabel] = true;
+}
+
+var wptBodyRequest;
+
+// Test that a value is a valid duration.
+// Invalid durations include undefined and -1.
+function IsValidDuration(value) {
+    // Explicitly check the type.  Would you have guessed that Number(['9'])
+    // is 9?  We need to support strings because php makes it too easy to
+    // send a number as a string.  We need to support numbers like "123.4".
+    if (typeof value != 'number' && typeof value != 'string')
+        return false;
+
+    // Number('') is 0, but the empty string is not a valid duration.
+    if (value === '')
+        return false;
+
+    var num = Number(value);
+    return (!isNaN(num) && num !== -1);
+}
+
+function NumBytesAsDisplayString(numBytes) {
+    var numKb = numBytes / 1024.0;
+
+    // We display kilobytes with one decimal point.  If the value with that
+    // precision would be zero, display bytes instead.
+    if (numKb >= 0.1) {
+        return numKb.toFixed(1) + ' KB';
+    }
+    return numBytes + ' B';
+}
+
+function htmlEncode(value){
+    if (value !== undefined) {
+        return jQuery('<div />').text(value).html();
+    } else {
+        return '';
+    }
+}
+
+function SelectRequest(step, request) {
+    InitRequestDialog(step);
+    var stepLabel = "step" + step;
+    $('#request-dialog-' + stepLabel).css('top', $("#request-overlay-" + stepLabel + "-" + request).position().top + 20);
+    $("#dialog-title-" + stepLabel).html('<a href="#' + stepLabel + '_request' + request + '">Request #' + request + '</a>');
+    var details='';
+    var requestHeaders='';
+    var responseHeaders='';
+    $("#response-body-" + stepLabel).html('');
+    try {
+        if (wptBodyRequest !== undefined)
+            wptBodyRequest.abort();
+    } catch (err) {
+    }
+    if (wptRequestData[stepLabel][request - 1] !== undefined) {
+        var r = wptRequestData[stepLabel][request - 1];
+        if (r['full_url'] !== undefined) {
+            if (wptNoLinks) {
+                details += '<b>URL:</b> ' + htmlEncode(r['full_url']) + '<br>';
+            } else {
+                details += '<b>URL:</b> <a href="' + htmlEncode(r['full_url']) + '">' + htmlEncode(r['full_url']) + '</a><br>';
+            }
+        }
+        if (r['initiator'] !== undefined && r['initiator'].length > 0) {
+            details += '<b>Loaded By:</b> ' + htmlEncode(r['initiator']);
+            if (r['initiator_line'] !== undefined)
+                details += ':' + htmlEncode(r['initiator_line']);
+            details += '<br>';
+        }
+        if (r['host'] !== undefined)
+            details += '<b>Host: </b>' + htmlEncode(r['host']) + '<br>';
+        if (r['ip_addr'])
+            details += '<b>IP: </b>' + htmlEncode(r['ip_addr']) + '<br>';
+        if (r['location'] !== undefined && r['location'] !== null && r['location'].length)
+            details += '<b>Location: </b>' + htmlEncode(r['location']) + '<br>';
+        if (r['responseCode'] !== undefined)
+            details += '<b>Error/Status Code: </b>' + htmlEncode(r['responseCode']) + '<br>';
+        if (r['priority'] !== undefined && r['priority'].length > 0)
+            details += '<b>Priority: </b>' + htmlEncode(r['priority']) + '<br>';
+        if (r['protocol'] !== undefined)
+            details += '<b>Protocol: </b>' + htmlEncode(r['protocol']) + '<br>';
+        if (r['http2_stream_id'] !== undefined && r['http2_stream_id'] > 0) {
+          details += "<b>HTTP/2 Stream: </b>" + htmlEncode(r['http2_stream_id']);
+          if (r['http2_stream_weight'] !== undefined)
+            details += ", weight " + htmlEncode(parseInt(r['http2_stream_weight']));
+          if (r['http2_stream_dependency'] !== undefined)
+            details += ", depends on " + htmlEncode(r['http2_stream_dependency']);
+          if (r['http2_stream_exclusive'] !== undefined && r['http2_stream_exclusive'] > 0)
+            details += ", EXCLUSIVE";
+          details += '<br>';
+        }
+        if (r['was_pushed'] !== undefined && r['was_pushed'] > 0)
+            details += '<b>SERVER PUSHED</b><br>';
+        if (r['request_id'] !== undefined && r['request_id'] !== null && r['request_id'].length)
+            details += '<b>Request ID: </b>' + htmlEncode(r['request_id']) + '<br>';
+        if (r['client_port'] !== undefined && r['client_port'] !== null && r['client_port'])
+            details += '<b>Client Port: </b>' + htmlEncode(r['client_port']) + '<br>';
+        if (r['load_start'] !== undefined)
+            details += '<b>Request Start: </b>' + (r['load_start'] / 1000.0).toFixed(3) + ' s<br>';
+        if (IsValidDuration(r['dns_ms'])) {
+            details += '<b>DNS Lookup: </b>' + htmlEncode(r['dns_ms']) + ' ms<br>';
+        } else if( r['dns_end'] !== undefined && r['dns_start'] !== undefined && r['dns_end'] > 0 ) {
+            var dnsTime = r['dns_end'] - r['dns_start'];
+            details += '<b>DNS Lookup: </b>' + dnsTime + ' ms<br>';
+        }
+        if (IsValidDuration(r['connect_ms'])) {
+            details += '<b>Initial Connection: </b>' + htmlEncode(r['connect_ms']) + ' ms<br>';
+            if (r['is_secure'] !== undefined && r['is_secure'] && IsValidDuration(r['ssl_ms'])) {
+                details += '<b>SSL Negotiation: </b>' + htmlEncode(r['ssl_ms']) + ' ms<br>';
+            }
+        } else if( r['connect_end'] !== undefined && r['connect_start'] !== undefined && r['connect_end'] > 0 ) {
+            var connectTime = r['connect_end'] - r['connect_start'];
+            details += '<b>Initial Connection: </b>' + connectTime + ' ms<br>';
+            if( r['ssl_end'] !== undefined && r['ssl_start'] !== undefined && r['ssl_end'] > 0 ) {
+                var sslTime = r['ssl_end'] - r['ssl_start'];
+                details += '<b>SSL Negotiation: </b>' + sslTime + ' ms<br>';
+            }
+        }
+        if (IsValidDuration(r['ttfb_ms'])) {
+            details += '<b>Time to First Byte: </b>' + htmlEncode(r['ttfb_ms']) + ' ms<br>';
+        }
+        if (IsValidDuration(r['download_ms']))
+            details += '<b>Content Download: </b>' + htmlEncode(r['download_ms']) + ' ms<br>';
+        if (r['bytesIn'] !== undefined)
+            details += '<b>Bytes In (downloaded): </b>' + NumBytesAsDisplayString(r['bytesIn']) + '<br>';
+        if (r['objectSizeUncompressed'] !== undefined)
+            details += '<b>Uncompressed Size: </b>' + NumBytesAsDisplayString(r['objectSizeUncompressed']) + '<br>';
+        if (r['certificate_bytes'] !== undefined && r['certificate_bytes'] > 0)
+            details += '<b>Certificates (downloaded): </b>' + r['certificate_bytes'] + ' B<br>';
+        if (r['bytesOut'] !== undefined)
+            details += '<b>Bytes Out (uploaded): </b>' + NumBytesAsDisplayString(r['bytesOut']) + '<br>';
+        if (r['custom_rules'] !== undefined) {
+            for (rule in r['custom_rules']) {
+                details += '<b>Custom Rule - ' + htmlEncode(rule) + ': </b>(';
+                details += htmlEncode(r['custom_rules'][rule]['count']) + ' matches) - ';
+                details += htmlEncode(r['custom_rules'][rule]['value']) + '<br>';
+            }
+        }
+        var psPageData = wptPageData[stepLabel] !== undefined ? wptPageData[stepLabel]['psPageData'] : undefined;
+        if (psPageData !== undefined &&
+            psPageData['connections'] !== undefined &&
+            r['socket'] !== undefined &&
+            psPageData['connections'][r['socket']] !== undefined &&
+            psPageData['connections'][r['socket']]['streams'] !== undefined) {
+          var priority_streams = psPageData['connections'][r['socket']]['streams'];
+          details += '<b>HTTP/2 Priority-Only Streams: </b><br>';
+          for (stream in priority_streams) {
+            details += '&nbsp;&nbsp;&nbsp;&nbsp;' + htmlEncode(stream) + ':';
+            if (priority_streams[stream]['weight'] !== undefined)
+              details += " weight = " + htmlEncode(priority_streams[stream]['weight']);
+            if (priority_streams[stream]['depends_on'] !== undefined)
+              details += " depends on " + htmlEncode(priority_streams[stream]['depends_on']);
+            if (priority_streams[stream]['exclusive'] !== undefined && priority_streams[stream]['exclusive'] > 0)
+              details += " EXCLUSIVE";
+            details += '<br>';
+          }
+        }
+        if (r['headers'] !== undefined){
+            if (r.headers['request'] !== undefined){
+                for (i=0;i<r.headers.request.length;i++) {
+                    requestHeaders += htmlEncode(r.headers.request[i]) + '<br>';
+                }
+            }
+            if (r.headers['response'] !== undefined){
+                for (i=0;i<r.headers.response.length;i++) {
+                    responseHeaders += htmlEncode(r.headers.response[i]) + '<br>';
+                }
+            }
+        }
+        if (r['body_url'] !== undefined && r['body_url'].length) {
+            details += '<a href="' + htmlEncode(r['body_url']) + '" target="_blank">Open response body in new window</a><br>'
+            try {
+                $("#response-body-" + stepLabel).text('Loading...');
+                wptBodyRequest = new XMLHttpRequest();
+                wptBodyRequest.open('GET', r['body_url'], true);
+                wptBodyRequest.onreadystatechange = function() {
+                if (wptBodyRequest.readyState == 4) {
+                    if (wptBodyRequest.status == 200) {
+                        $("#response-body-" + stepLabel).text(wptBodyRequest.responseText);
+                    } else {
+                        $("#response-body-" + stepLabel).text('');
+                    }
+                }
+              }
+              wptBodyRequest.send();
+            } catch (err) {
+            }
+        } else if (r['contentType'] !== undefined && r['contentType'].indexOf('image') >= 0) {
+            if (wptNoLinks) {
+                $("#response-body-" + stepLabel).html('<img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '">');
+            } else {
+                $("#response-body-" + stepLabel).html('<a href="' + r['full_url'] + '"><img style="max-width:100%; max-height:100%;" src="' + r['full_url'] + '"></a>');
+            }
+        } else {
+            $("#response-body-" + stepLabel).html('Not Available.<br><br>Turn on the "Save Response Bodies" option in the advanced settings to capture text resources.');
+        }
+    }
+    $("#request-details-" + stepLabel).html(details);
+    $("#request-headers-" + stepLabel).html(requestHeaders);
+    $("#response-headers-" + stepLabel).html(responseHeaders);
+    $('#request-dialog-' + stepLabel).jqmShow();
+
+    // highlight the selected request
+    for (i=1;i<=wptRequestCount[stepLabel];i++) {
+        if (i == request)
+            $("#request-overlay-" + stepLabel + "-" + i).addClass("selected");
+        else
+            $("#request-overlay-" + stepLabel + "-" + i).removeClass("selected");
+    }
+}
+
+// support for the multi-waterfall translucency
+$(".waterfall-transparency").change(function() {
+    var newValue = this.value;
+    var id = this.name;
+    $("#" + id).css({ opacity: newValue });
+});
+
+$(".waterfall-transparency").on('input', function() {
+    var newValue = this.value;
+    var id = this.name;
+    $("#" + id).css({ opacity: newValue });
+});
+        </script>
+    
+
+
+</div><div id="tooltip" style="display: none; top: 282px; left: 1408px; right: auto;" class=""><h3 style="display: none;"></h3><div class="body">Click the grade to see the requests that should be served from a CDN if you have a distributed user base</div><div class="url" style="display: none;"></div></div></body></html>
