@@ -27,3 +27,7 @@ function onSignIn(googleUser) {
   xhr.send('idtoken=' + id_token);
 
 }
+
+window.onLoadCallback = function(){
+	alert("Callback Done!");
+}

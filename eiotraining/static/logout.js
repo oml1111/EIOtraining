@@ -9,6 +9,7 @@ function signOut() {
 }
 
 window.onLoadCallback = function(){
+	alert("Callback Done!");
 	gapi.load('auth2', function() {
 		gapi.auth2.init();
 	});
