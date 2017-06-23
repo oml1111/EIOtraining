@@ -95,7 +95,7 @@ def et_login():
 
 @app.route('/logout')
 def logout(lang=''):
-	resp = make_response(redirect(lang+'/'))
+	resp = make_response(render_template("en/logout.html", lang=lang))
 	resp.set_cookie('user', '', expires = 0)
 	resp.set_cookie('password_hash', '', expires=0)
 	return resp

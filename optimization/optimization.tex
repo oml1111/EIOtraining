@@ -7,7 +7,7 @@
 
 The performance status before optimizations is given in the "before*.html" files. It's immediately visible that the first thing that needs to be optimized is caching.
 
-
+First I configured "apache" to give long "Expires" headers with the static files. The problem was that google login scripts had short expiry that was out of my control. In order to deal with that, I segregated all google authentication functionality to the "/login" and "/logout" pages.
 
 \end{document}
 
