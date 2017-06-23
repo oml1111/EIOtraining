@@ -9,7 +9,7 @@ The performance status before optimizations is given in the "before*.html" files
 
 First I configured "apache" to give long "Expires" headers with the static files. The problem was that google login scripts had short expiry that was out of my control. In order to deal with that, I segregated all google authentication functionality to the "/login" and "/logout" pages. As a result, all static files in the index and problemset pages are now cached, while caching files in login and logout pages probably doesn't matter as much.
 
-The result is given in the "after*.html" files. There was a noticable speedup of 0.2s on the median run. Google PageSpeed Insigths was still suggesting optimizations (in "PageSpeedbefore.html") to remove render blocking, so I decided to implement them. First I added a defer attribute to all scripts. This increased my mobile score to 91.
+The result is given in the "after*.html" files. There was a noticable speedup of 0.2s on the median run. Google PageSpeed Insigths was still suggesting optimizations (in "PageSpeedbefore.html") to remove render blocking, so I decided to implement them. First I added a defer attribute to all scripts. This increased my mobile score to 91. Additionally I added a script to "utils.js" to load the css later. This increased the score to the maximum of 100. To prevent elements from jumping around, I inlined the sizes in html.
 
 \end{document}
 
