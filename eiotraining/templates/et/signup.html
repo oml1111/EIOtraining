@@ -9,8 +9,8 @@ Konto Loomine - EIOtraining
 <form method="post">
 	<table>
 		<tr>
-			<td>Kasutajanimi:</td>
-			<td><input name="user" value="{{user}}"></td>
+			<td><label for="user">Kasutajanimi:</label></td>
+			<td><input name="user" id="user" value="{{user}}"></td>
 			{% if invalid_user %}
 				<td>
 				<span class="errormsg">Salasõnad peavad sisaldama 3-20 kirjamärki ja koosnema ladina tähtedest, numbritest, side- ja/või alakriipsudest</span>
@@ -18,8 +18,8 @@ Konto Loomine - EIOtraining
 			{% endif %}
 		</tr>
 		<tr>
-			<td>Salasõna:</td>
-			<td><input name="password" type="password"></td>
+			<td><label for="password">Salasõna:</label></td>
+			<td><input name="password" id="password" type="password"></td>
 			{% if invalid_password %}
 				<td>
 				<span class="errormsg">Salasõnad peavad sisaldama 6-50 tähemärki</span>
@@ -27,8 +27,8 @@ Konto Loomine - EIOtraining
 			{% endif %}
 		</tr>
 		<tr>
-			<td>Salasõna uuesti:</td>
-			<td><input name="verify" type="password"></td>
+			<td><label for="verify">Salasõna uuesti:</label></td>
+			<td><input name="verify" id="verify" type="password"></td>
 			{% if invalid_verify %}
 				<td>
 				<span class="errormsg">Salasõnad ei ühildu</span>
@@ -36,8 +36,8 @@ Konto Loomine - EIOtraining
 			{% endif %}
 		</tr>
 		<tr>
-			<td>Email:</td>
-			<td><input name="email" value="{{email}}"></td>
+			<td><label for="email">Email:</label></td>
+			<td><input name="email" id="email" value="{{email}}"></td>
 			{% if invalid_email %}
 				<td>
 				<span class="errormsg">Ebasobiv email-i aadress</span>

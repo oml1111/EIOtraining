@@ -29,4 +29,4 @@ Techniques:
 9. Authentication (3p) - Handled mainly in main.py and login.js. You can now log in with your Google account.
 10. AJAX (3p) - Handled in utils.js, news.html and main.py. In the index page, you can search news by creator username. Leave blank to fetch all news. You can create news on the '/newpost' page.
 11. Automated Tests (6p) - Created using Selenium IDE. Contained in the 'tests/' folder
-12. Optimization (6p) - I used "Google PageSpeed" and "WebPageTest". The optimization process is described in the "optimization" folder.
+12. Optimization (6p) - I used "Google PageSpeed" and "WebPageTest". The optimization process is described in the "optimization" folder in "optimization.pdf".

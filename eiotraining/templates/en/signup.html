@@ -9,8 +9,8 @@ Signup - EIOtraining
 <form method="post">
 	<table>
 		<tr>
-			<td>Username:</td>
-			<td><input name="user" value="{{user}}"></td>
+			<td><label for="user">Username:</label></td>
+			<td><input name="user" id="user" value="{{user}}"></td>
 			{% if invalid_user %}
 				<td>
 				<span class="errormsg">Username must contain 3-20 characters and consist of latin letters, numbers, hyphens and/or underscores</span>
@@ -18,8 +18,8 @@ Signup - EIOtraining
 			{% endif %}
 		</tr>
 		<tr>
-			<td>Password:</td>
-			<td><input name="password" type="password"></td>
+			<td><label for="password">Password:</label></td>
+			<td><input name="password" id="password" type="password"></td>
 			{% if invalid_password %}
 				<td>
 				<span class="errormsg">Password must contain 6-50 characters</span>
@@ -27,8 +27,8 @@ Signup - EIOtraining
 			{% endif %}
 		</tr>
 		<tr>
-			<td>Verify Password:</td>
-			<td><input name="verify" type="password"></td>
+			<td><label for="verify">Verify Password:</label></td>
+			<td><input name="verify" id="verify" type="password"></td>
 			{% if invalid_verify %}
 				<td>
 				<span class="errormsg">Passwords don't match</span>
@@ -36,8 +36,8 @@ Signup - EIOtraining
 			{% endif %}
 		</tr>
 		<tr>
-			<td>Email:</td>
-			<td><input name="email" value="{{email}}"></td>
+			<td><label for="email">Email:</label></td>
+			<td><input name="email" id="email" value="{{email}}"></td>
 			{% if invalid_email %}
 				<td>
 				<span class="errormsg"> Invalid email</span>
