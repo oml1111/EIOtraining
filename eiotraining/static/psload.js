@@ -1,3 +1,6 @@
+$(document).ready(function() {
+	$(".nav-folder").hide();
+});
 function navtoggle(id) {
 	$("#navdiv-"+id).toggle();
 	navbutton = $("#navbutton-"+id)
