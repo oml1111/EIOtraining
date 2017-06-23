@@ -12,5 +12,8 @@ window.onLoadCallback = function(){
 	gapi.load('auth2', function() {
 		gapi.auth2.init();
 	});
+	logoutlink = $("#logoutlink")
+	logoutlink.onclick = signOut;
+	logoutlink.href="#";
 	signOut();
 }
