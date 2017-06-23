@@ -29,5 +29,4 @@ function onSignIn(googleUser) {
 }
 
 window.onLoadCallback = function(){
-	alert("Callback Done!");
 }

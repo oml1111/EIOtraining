@@ -9,10 +9,9 @@ function signOut() {
 }
 
 window.onLoadCallback = function(){
-	alert("Callback Done!");
 	gapi.load('auth2', function() {
 		gapi.auth2.init();
-	});
+	}).then(signOut);
 	logoutlink = $("#logoutlink")
 	logoutlink.attr("onclick", "signOut();");
 	logoutlink.attr("href", "#");
