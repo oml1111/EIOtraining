@@ -5,6 +5,14 @@
 Sisse Logimine - EIOtraining
 {% endblock %}
 
+{% block head %}
+	<script src="/static/login.js"></script>
+	<script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+	<meta name="google-signin-client_id" content="662074927941-q2vfnrddgh6o59avpas4gfnp7d7ft1ro.apps.googleusercontent.com">
+{% endblock %}
+
+
+
 {% block body %}
 <form method="post">
 	<table>
