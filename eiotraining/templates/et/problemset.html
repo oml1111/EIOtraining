@@ -9,7 +9,7 @@
 
 <script src="/static/psload.js" defer></script>
 
-
+<div style="float:left;">
 {% for navevent in navevents %}
 	{% if navevent[0] == 0 %}
 		{% if navevent[1][2] == 0 %}
@@ -47,6 +47,7 @@
 {% if admin %}
 	<div><a class="nav-add" href="/navadd/0">Add folder/tutorial/problem</a></div>
 {% endif %}
+</div>
 
 {{ statement|safe }}
 
