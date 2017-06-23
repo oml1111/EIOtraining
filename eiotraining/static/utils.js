@@ -15,3 +15,11 @@ function getNews() {
 	}
 	xhr.send('user=' + user);
 }
+
+{
+	var addStylesNode = document.getElementById("deferred-styles");
+	var replacement = document.createElement("div");
+	replacement.innerHTML = addStylesNode.textContent;
+	document.body.appendChild(replacement)
+	addStylesNode.parentElement.removeChild(addStylesNode);
+}
