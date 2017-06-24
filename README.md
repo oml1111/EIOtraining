@@ -1,12 +1,9 @@
 Directory contents:
 
+- database/ - description of the database
 - eiotraining/ - the main project folder
 - pymysql/ - the downloaded PyMySQL python library, used for reference
 - test/ - a test project folder
-- database.pdf - high-level description of the database
-- database.png - picture for the pdf file
-- database.tex - LATEX file for the pdf
-- database.txt - low-level description of the database
 - download.sh - script to download the project from the server
 - memcache.py - the memcached python library, used for reference
 - notes.txt - Some likely important details to remember
