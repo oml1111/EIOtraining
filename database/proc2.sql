@@ -1,0 +1,1 @@
+SELECT * FROM news INNER JOIN users ON news.creator_id = users.id WHERE user = 'oliver' ORDER BY created DESC;

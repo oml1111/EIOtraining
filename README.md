@@ -18,13 +18,13 @@ Directory contents:
 
 Techniques:
 
-1. Database caching (not in the list of techniques, but relevant) - Handled in database.py. Every SQL query has been cached. For caching we used the "memcached" library. This automatically ensures that the most popular queries are in cache and won't hit the database, also it makes programming simpler by allowing us to request the same data multiple times without having to hit the DB
+1. Database caching (not in the list of techniques, but relevant) - Handled in database.py. Every SQL query has been cached. For caching we used the "memcached" library. This automatically ensures that the most popular queries are in cache and won't hit the database, also it makes programming simpler by allowing us to request the same data multiple times without having to worry about hitting the DB redundantly
 2. Database Operations (1p+1p+1p) - Handled in database.py. We perform database insertions and queries in multiple places in different ways. We also use a simple "COUNT" aggregated query to get the size of the "users" table.
 3. Code Repository (1p) - Obviously this has been done
 4. Javascript (1p) - Handled in main.py and static/psload.js. Functionality visible in "/problemset" url. Used for the navigation tree system.
 5. Authorization (3p) - Handled in main.py, database.py and accounts.py. Any account can view stuff, but only admin accounts can edit the page.
 6. Templating System (substitute for XML, 3p) - Handled in main.py. To allow us to place stuff to web pages in a cleaner fashion, we use the jinja2 templating system
-7. Testing environment (6p)
+7. Testing environment (6p) - This website is up in "http://oml1111.site/"
 8. Support for multiple languages (3p) - Handled in main.py and in templates. Pages that ordinary users can access are in both Estonian and English
 9. Authentication (3p) - Handled mainly in main.py and login.js. You can now log in with your Google account.
 10. AJAX (3p) - Handled in utils.js, news.html and main.py. In the index page, you can search news by creator username. Leave blank to fetch all news. You can create news on the '/newpost' page.

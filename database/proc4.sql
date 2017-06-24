@@ -1,0 +1,1 @@
+SELECT statement FROM statements WHERE parent = (SELECT id FROM navlinks WHERE description = "Getting Started");
