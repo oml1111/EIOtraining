@@ -18,8 +18,6 @@ function getNews() {
 
 {
 	var addStylesNode = document.getElementById("deferred-styles");
-	var replacement = document.createElement("div");
-	replacement.innerHTML = addStylesNode.textContent;
-	document.body.appendChild(replacement)
+	document.head.appendChild(addStylesNode.childNodes[0])
 	addStylesNode.parentElement.removeChild(addStylesNode);
 }
