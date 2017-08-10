@@ -72,7 +72,7 @@ def get_user_data(user):
 	data = mc.get('user:'+user)
 	if(data == None):
 		cursor = db_execute('SELECT * FROM users WHERE user = %s', user)
-		if cnt == 0:
+		if cursor.rowcount == 0:
 			return None
 		data = cursor.fetchone()
 		mc.set('user:'+user, data)
@@ -83,7 +83,7 @@ def get_user_data_by_id(id):
 	data = mc.get('user_by_id:' + str(id))
 	if(data == None):
 		cursor = db_execute('SELECT * FROM users WHERE id = %s', id)
-		if cnt == 0:
+		if cursor.rowcount == 0:
 			return None
 		data = cursor.fetchone()
 		mc.set('user_by_id:' + str(id), data)
@@ -95,7 +95,7 @@ def get_user_data_by_email(email):
 	data = mc.get('user_by_email:' + email)
 	if(data == None):
 		cursor = db_execute('SELECT * FROM users WHERE email = %s', email)
-		if cnt == 0:
+		if cursor.rowcount == 0:
 			return None
 		data = cursor.fetchone()
 		mc.set('user_by_email:' + email, data)
